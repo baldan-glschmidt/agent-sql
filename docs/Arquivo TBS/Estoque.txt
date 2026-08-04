@@ -1,0 +1,5893 @@
+---------------------
+Tabela: E210EST
+
+Descrição: Estoques - Produtos por Depósito 
+Total de campos: 53 
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 CodPro
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Código do produto em estoque
+Título curto:	 Produto
+Título longo:	 Produto
+
+Nome do Campo:	 CodDer
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Código da derivação do produto em estoque
+Título curto:	 Deriv.
+Título longo:	 Derivação
+
+Nome do Campo:	 CodDep
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do depósito 
+Título curto:	 Depós.
+Título longo:	 Depósito
+
+Nome do Campo:	 DatIni
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data do saldo inicial do produto em estoque
+Título curto:	 Data Inic.
+Título longo:	 Data Saldo Inicial
+
+Nome do Campo:	 SalIni
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Saldo inicial do produto em estoque no depósito
+Título curto:	 Saldo Inic
+Título longo:	 Saldo Inicial
+
+Nome do Campo:	 MskDep
+Tipo do Campo:	 String(018)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[18]
+Descrição:	 Máscara do depósito
+Título curto:	 Máscara
+Título longo:	 Máscara
+
+Nome do Campo:	 NivDep
+Tipo do Campo:	 Number(001,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 9[1]
+Descrição:	 Nível do depósito conforme a máscara
+Título curto:	 Nivel
+Título longo:	 Nível
+
+Nome do Campo:	 UniMed
+Tipo do Campo:	 String(003)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[3]
+Descrição:	 Unidade de medida de controle do estoque do produto
+Título curto:	 Uni. Med.
+Título longo:	 Unidade Medida
+
+Nome do Campo:	 EstNeg
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Indicativo se aceita ou não estoque negativo
+Título curto:	 Ac. Est. Neg.
+Título longo:	 Aceita Estoque Negativo
+
+Nome do Campo:	 QtdEst
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade física total do estoque no depósito
+Título curto:	 Qtd. Est.
+Título longo:	 Quantidade em Estoque
+
+Nome do Campo:	 QtdBlo
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade de estoque bloqueado manualmente
+Título curto:	 Qtd. Bloq.
+Título longo:	 Quantidade Bloqueado Manual
+
+Nome do Campo:	 QtdRes
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade do estoque reservado (empenho)
+Título curto:	 Qtd. Res.
+Título longo:	 Quantidade Reservada
+
+Nome do Campo:	 QtdRae
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade de reserva exclusiva do estoque
+Título curto:	 Qtd. Res. Exclusiva
+Título longo:	 Quantidade Reserva Exclusiva
+
+Nome do Campo:	 QtdOrd
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade pendente em ordens de produção ou compra
+Título curto:	 Qtd. Ordens
+Título longo:	 Quantidade Ordens Pendentes
+
+Nome do Campo:	 QtdCcl
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade consignada para clientes 
+Título curto:	 Qtd. Cons. Cli.
+Título longo:	 Quantidade Consignada Cliente
+
+Nome do Campo:	 QtdCfo
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade consignada de fornecedores
+Título curto:	 Qtd. Forn.
+Título longo:	 Quantidade Consignada Fornecedor
+
+Nome do Campo:	 EstRep
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade de estoque para reposição - ponto de reposição
+Título curto:	 Est. Rep.
+Título longo:	 Quantidade Estoque Reposição
+
+Nome do Campo:	 EstMin
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade  mínima em estoque para análise de reposição
+Título curto:	 Est. Mín.
+Título longo:	 Quantidade Estoque Mínimo
+
+Nome do Campo:	 EstMax
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade máxima em estoque para análise de reposição
+Título curto:	 Est. Máx.
+Título longo:	 Quantidade Estoque Máximo
+
+Nome do Campo:	 EstMid
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Quantidade mínima em dias para análise de reposição
+Título curto:	 Mín. Dias
+Título longo:	 Quantidade Mínima Dias
+
+Nome do Campo:	 EstMad
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Quantidade máxima em dias para análise de reposição
+Título curto:	 Máx. Dias
+Título longo:	 Quantidade Máxima Dias
+
+Nome do Campo:	 DatCcr
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data inicial do consumo para cálculo do consumo por dia
+Título curto:	 Data Inic. Cons.
+Título longo:	 Data Início Consumo
+
+Nome do Campo:	 DatCfr
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data final do consumo para cálculo do consumo por dia 
+Título curto:	 Data Fim Cons.
+Título longo:	 Data Final Consumo
+
+Nome do Campo:	 QtdCcr
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade de consumo médio por dia no período
+Título curto:	 Qtd. Cons. Dia
+Título longo:	 Quantidade Consumo Dia
+
+Nome do Campo:	 DatUen
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da última movimentação de entrada do produto no estoque
+Título curto:	 Data Últ. Ent.
+Título longo:	 Data Última Entrada
+
+Nome do Campo:	 DatUsa
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da última movimentação de saída do produto no estoque
+Título curto:	 Data Últ. Saída
+Título longo:	 Data Última Saída
+
+Nome do Campo:	 DatVal
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data de validade do produto no depósito
+Título curto:	 Data Valid.
+Título longo:	 Data Validade
+
+Nome do Campo:	 IndInv
+Tipo do Campo:	 Number(001,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 9[1]
+Descrição:	 Indicativo se o item está em inventário com ou sem permissão de movimentação
+Título curto:	 Ind. Inv.
+Título longo:	 Indicador Inventário
+
+Nome do Campo:	 SitEst
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Situação do produto no depósito 
+Título curto:	 Sit.
+Título longo:	 Situação
+
+Nome do Campo:	 CodMot
+Tipo do Campo:	 Number(006,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZ9
+Descrição:	 Código do motivo da situação do estoque
+Título curto:	 Mot.
+Título longo:	 Motivo
+
+Nome do Campo:	 ObsMot
+Tipo do Campo:	 String(250)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #(40,2)#
+Descrição:	 Observação 
+Título curto:	 Obs. Mot.
+Título longo:	 Observação Motivo
+
+Nome do Campo:	 UsuGer
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Usuário responsável pela geração do registro
+Título curto:	 Usuário Geração
+Título longo:	 Usuário Geração
+
+Nome do Campo:	 DatGer
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da geração do registro
+Título curto:	 Data Geração
+Título longo:	 Data Geração
+
+Nome do Campo:	 HorGer
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora da geração do registro
+Título curto:	 Hora Geração
+Título longo:	 Hora Geração
+
+Nome do Campo:	 PrzRsu
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Prazo médio de ressuprimento do produto em dias
+Título curto:	 Prazo Ress.
+Título longo:	 Prazo Ressuprimento
+
+Nome do Campo:	 QtdEmb
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade em embalagens de estocagem do produto
+Título curto:	 Qtde Emb.
+Título longo:	 Quantidade Embalada
+
+Nome do Campo:	 EstCap
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Capacidade máxima de estocagem do produto 
+Título curto:	 Cap. de Estocagem
+Título longo:	 Capacidade de Estocagem
+
+Nome do Campo:	 DatUan
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da Última Análise de Reposição
+Título curto:	 Data Análise Rep.
+Título longo:	 Data Últ. Análise Rep.
+
+Nome do Campo:	 DisXpl
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Considera produtos deste depósito p/ o cálculo de necessidades
+Título curto:	 P/ cálc. necess.
+Título longo:	 Considera p/ cálculo necessidades
+
+Nome do Campo:	 CodEnd
+Tipo do Campo:	 String(020)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[20]
+Descrição:	 Código do endereçamento do produto no depósito
+Título curto:	 Endereçam.
+Título longo:	 Endereçamento
+
+Nome do Campo:	 LigEsp
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Indicativo se a ligação produto por depósito é considerada especial (análise de reposição para depósito filiais)
+Título curto:	 Ind. Lig. Esp.
+Título longo:	 Indicativo Ligação Especial
+
+Nome do Campo:	 CurAbc
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Curva ABC (informar A, B ou C) através da classificação pela curva de quantidades em estoque
+Título curto:	 ABC
+Título longo:	 Curva ABC
+
+Nome do Campo:	 DdgUen
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data de digitação da última movimentação de entrada do produto no estoque
+Título curto:	 Data Dig. Últ. Ent.
+Título longo:	 Data Digitação Última Entrada
+
+Nome do Campo:	 HdgUen
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora de digitação da última movimentação de entrada do produto no estoque
+Título curto:	 Hora Dig. Últ. Ent.
+Título longo:	 Hora Digitação Última Entrada
+
+Nome do Campo:	 DdgUsa
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data de digitação da última movimentação de saída do produto no estoque
+Título curto:	 Data Dig. Últ. Saída
+Título longo:	 Data Digitação Última Saída
+
+Nome do Campo:	 HdgUsa
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora de digitação da última movimentação de saída do produto no estoque
+Título curto:	 Hora Dig. Últ. Saída
+Título longo:	 Hora Digitação Última Saída
+
+Nome do Campo:	 IndEma
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Participa da análise de evolução de estoque mínimo automatizado
+Título curto:	 Part. Est. Mínimo
+Título longo:	 Part. Est. Mín. Automatizado
+
+Nome do Campo:	 USU_minest
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Qantidade Minima de Estoque
+Título curto:	 Qantidade Minima de Estoque
+Título longo:	 Qantidade Minima de Estoque
+
+Nome do Campo:	 USU_maxest
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade Maxima de Estoque
+Título curto:	 Quantidade Maxima de Estoque
+Título longo:	 Quantidade Maxima de Estoque
+
+Nome do Campo:	 USU_PtoCri
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Ponto Crítico (nível baixo de estoque)
+Título curto:	 Ponto Crítico
+Título longo:	 Ponto Crítico
+
+Nome do Campo:	 USU_PolCdi
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 A[1]
+Descrição:	 Está na Politica do CD
+Título curto:	 Está na Politica do CD
+Título longo:	 Está na Politica do CD
+
+Nome do Campo:	 USU_USUEMB
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 A[1]
+Descrição:	 Usado para gerar MIN/MAX da embalagem?
+Título curto:	 Usado para gerar MIN/MAX da embalagem?
+Título longo:	 Usado para gerar MIN/MAX da embalagem?
+
+Nome da Chave primária:	 CP_E210EST
+Campos da Chave primária:	 CodEmp;CodPro;CodDer;CodDep
+
+Nome do Índice:	 E210ESTIndice1
+Tipo do Índice:	 Não unico
+Campo(s):	 CodEmp;CodDep
+
+Total de relacionamentos: 2
+Relacionamento:	 IR_E210EST_002
+Tabela referenciada:	 E075DER
+Campo(s) na origem:	 CodEmp;CodPro;CodDer
+Campo(s) no destino:	 CodEmp;CodPro;CodDer
+
+Relacionamento:	 IR_E210EST_003
+Tabela referenciada:	 E205DEP
+Campo(s) na origem:	 CodEmp;CodDep
+Campo(s) no destino:	 CodEmp;CodDep
+
+
+---------------------
+Tabela: E210EXC
+
+Descrição: Estoques - Movimentos Excluídos 
+Total de campos: 29 
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 CodPro
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Código do produto movimentado
+Título curto:	 Produto
+Título longo:	 Produto
+
+Nome do Campo:	 CodDer
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Código da derivação do produto movimentado
+Título curto:	 Deriv.
+Título longo:	 Derivação
+
+Nome do Campo:	 CodDep
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do depósito movimentado
+Título curto:	 Depós.
+Título longo:	 Depósito
+
+Nome do Campo:	 DatMov
+Tipo do Campo:	 Date
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da movimentação do estoque
+Título curto:	 Data Mov.
+Título longo:	 Data Movimento
+
+Nome do Campo:	 SeqExc
+Tipo do Campo:	 Number(006,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZ9
+Descrição:	 Sequência de exclusão do movimento
+Título curto:	 Seq. Exc.
+Título longo:	 Sequência Exclusão
+
+Nome do Campo:	 CodTns
+Tipo do Campo:	 String(005)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[5]
+Descrição:	 Código da transação de movimentação de estoque
+Título curto:	 Trans.
+Título longo:	 Transação
+
+Nome do Campo:	 EstMov
+Tipo do Campo:	 String(002)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[2]
+Descrição:	 Tipo do estoque movimentado
+Título curto:	 Est. Mov.
+Título longo:	 Estoque Movimentado
+
+Nome do Campo:	 EstEos
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Entrada ou saída de estoque
+Título curto:	 Ent./Saída
+Título longo:	 Entrada ou Saída
+
+Nome do Campo:	 OriOrp
+Tipo do Campo:	 String(003)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[3]
+Descrição:	 Código da Origem de Produto da OP (Quando Movimento é de uma OP específica)
+Título curto:	 Ori. OP
+Título longo:	 Origem da OP
+
+Nome do Campo:	 NumDoc
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Número de documento base da movimentação
+Título curto:	 Doc.
+Título longo:	 Documento
+
+Nome do Campo:	 QtdMov
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade do movimento 
+Título curto:	 Qtd. Mov.
+Título longo:	 Quantidade Movimento
+
+Nome do Campo:	 VlrMov
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor do movimento
+Título curto:	 Vlr. Mov.
+Título longo:	 Valor Movimento
+
+Nome do Campo:	 NumEme
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Número do documento de entrada do movimento de estoque
+Título curto:	 Nr. Doc
+Título longo:	 Número Documento
+
+Nome do Campo:	 SeqEme
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZ9
+Descrição:	 Sequência do produto no documento de movimento de estoque
+Título curto:	 Seq. Mov.
+Título longo:	 Sequência
+
+Nome do Campo:	 CodFil
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial da nota fiscal de saída
+Título curto:	 Filial NFS
+Título longo:	 Filial NF Saída
+
+Nome do Campo:	 CodSnf
+Tipo do Campo:	 String(003)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[3]
+Descrição:	 Código da série da nota fiscal de saída
+Título curto:	 Série NF
+Título longo:	 Série NF
+
+Nome do Campo:	 NumNfv
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Número da Nota Fiscal de Saída
+Título curto:	 Nº NFS
+Título longo:	 Nº NF Saída
+
+Nome do Campo:	 SeqIpv
+Tipo do Campo:	 Number(003,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9
+Descrição:	 Sequência do item na nota fiscal de saída
+Título curto:	 Seq. NFS
+Título longo:	 Sequência NF Saída
+
+Nome do Campo:	 CodCli
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Código do cliente para os movimentos consignados
+Título curto:	 Cliente
+Título longo:	 Cliente
+
+Nome do Campo:	 FilOcp
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial da Ordem de Compra
+Título curto:	 Filial
+Título longo:	 Filial
+
+Nome do Campo:	 NumOcp
+Tipo do Campo:	 Number(008,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ.ZZZ.ZZ9
+Descrição:	 Número da ordem de compra
+Título curto:	 OC
+Título longo:	 Nº Ordem Compra
+
+Nome do Campo:	 SeqIpo
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Sequência de item da ordem de compra
+Título curto:	 Seq.
+Título longo:	 Sequência
+
+Nome do Campo:	 FilNfc
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial da nota fiscal de entrada
+Título curto:	 Filial NFE
+Título longo:	 Filial NF Entrada
+
+Nome do Campo:	 CodFor
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Código do fornecedor para os movimentos consignados
+Título curto:	 Forn.
+Título longo:	 Fornecedor
+
+Nome do Campo:	 NumNfc
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Número da Nota Fiscal de Entrada
+Título curto:	 Nº NFE
+Título longo:	 Nº NF Entrada
+
+Nome do Campo:	 SnfNfc
+Tipo do Campo:	 String(003)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[3]
+Descrição:	 Código da série da nota fiscal de entrada
+Título curto:	 Série NFE
+Título longo:	 Série NF Entrada
+
+Nome do Campo:	 SeqIpc
+Tipo do Campo:	 Number(003,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9
+Descrição:	 Sequência do item da nota fiscal de entrada
+Título curto:	 Seq. Item NFE
+Título longo:	 Sequência Item NF Entrada
+
+Nome do Campo:	 ExpWms
+Tipo do Campo:	 Number(001,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 9[1]
+Descrição:	 Indicativo se a exclusão do movimento de estoque foi exportado para o sistema WMS
+Título curto:	 Exp. WMS
+Título longo:	 Exportado WMS
+
+Nome da Chave primária:	 CP_E210EXC
+Campos da Chave primária:	 CodEmp;CodPro;CodDer;CodDep;DatMov;SeqExc
+
+Total de relacionamentos: 1
+Relacionamento:	 IR_E210EXC_003
+Tabela referenciada:	 E210EST
+Campo(s) na origem:	 CodEmp;CodPro;CodDer;CodDep
+Campo(s) no destino:	 CodEmp;CodPro;CodDer;CodDep
+
+
+---------------------
+Tabela: E210FEM
+
+Descrição: Estoques - Faixa de Evolução do Estoque Mínimo Automatizado 
+Total de campos: 12 
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 SeqFem
+Tipo do Campo:	 Number(002,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 Z9
+Descrição:	 Sequência da faixa de evolução do estoque mínimo automatizado
+Título curto:	 Seq.
+Título longo:	 Sequência
+
+Nome do Campo:	 QtmIni
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade estoque mínimo atual inicial
+Título curto:	 Est. Mín. Ini.
+Título longo:	 Quantidade Estoque Mínimo Atual Inicial
+
+Nome do Campo:	 QtmFin
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade estoque mínimo atual final
+Título curto:	 Est. Mín. Final
+Título longo:	 Quantidade Estoque Mínimo Atual Final
+
+Nome do Campo:	 PerAum
+Tipo do Campo:	 Number(005,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9,99
+Descrição:	 Percentual de aumento do estoque mínimo automatizado
+Título curto:	 % Aumento
+Título longo:	 % Aumento
+
+Nome do Campo:	 PerRed
+Tipo do Campo:	 Number(005,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9,99
+Descrição:	 Percentual de redução do estoque mínimo automatizado
+Título curto:	 % Redução
+Título longo:	 % Redução
+
+Nome do Campo:	 UsuGer
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Usuário responsável pela geração do registro
+Título curto:	 Usuário Geração
+Título longo:	 Usuário de Geração
+
+Nome do Campo:	 DatGer
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da geração do registro
+Título curto:	 Data Geração
+Título longo:	 Data da Geração
+
+Nome do Campo:	 HorGer
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora da geração do registro
+Título curto:	 Hora Geração
+Título longo:	 Hora da Geração
+
+Nome do Campo:	 UsuAlt
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Usuário responsável pela última alteração do registro
+Título curto:	 Usuário Últ. Alter.
+Título longo:	 Usuário Última Alteração
+
+Nome do Campo:	 DatAlt
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da última alteração do registro
+Título curto:	 Data Últ. Alter.
+Título longo:	 Data Última Alteração
+
+Nome do Campo:	 HorAlt
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora da última alteração do registro
+Título curto:	 Hora Últ. Alter.
+Título longo:	 Hora Última Alteração
+
+Nome da Chave primária:	 CP_E210FEM
+Campos da Chave primária:	 CodEmp;SeqFem
+
+Total de relacionamentos: 1
+Relacionamento:	 IR_E210FEM_000
+Tabela referenciada:	 E070EMP
+Campo(s) na origem:	 CodEmp
+Campo(s) no destino:	 CodEmp
+
+
+---------------------
+Tabela: E210HEM
+
+Descrição: Estoques - Histórico de Evolução do Estoque Mínimo Automatizado 
+Total de campos: 18 
+Nome do Campo:	 IdeUni
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Identificador de registro
+Título curto:	 Ident. Registro
+Título longo:	 Identificador Registro
+
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 CodPro
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Código do produto
+Título curto:	 Produto
+Título longo:	 Produto
+
+Nome do Campo:	 CodDer
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Código da derivação do produto
+Título curto:	 Deriv.
+Título longo:	 Derivação
+
+Nome do Campo:	 CodDep
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do depósito
+Título curto:	 Depós.
+Título longo:	 Depósito
+
+Nome do Campo:	 MedVen
+Tipo do Campo:	 Number(019,6)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZZ.ZZZ.ZZZ.ZZ9,9[6]
+Descrição:	 Média das vendas
+Título curto:	 Média Vendas
+Título longo:	 Média das Vendas
+
+Nome do Campo:	 QtdEmi
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade do estoque mínimo atual inicial
+Título curto:	 Est. Mín. Inicial
+Título longo:	 Qtd. Est. Mínimo Atual Inicial
+
+Nome do Campo:	 QtdEmf
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade do estoque mínimo atual final
+Título curto:	 Est. Mín. Final.
+Título longo:	 Qtd. Est. Mínimo Atual Final
+
+Nome do Campo:	 QtdVen
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade vendida do produto
+Título curto:	 Qtd. Vendida
+Título longo:	 Quantidade Vendida
+
+Nome do Campo:	 QtdDev
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade devolvida do produto
+Título curto:	 Qtd. Dev.
+Título longo:	 Quantidade Devolvida
+
+Nome do Campo:	 QtdCan
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade cancelada do produto
+Título curto:	 Qtd. Cancelada
+Título longo:	 Qtd. Cancelada
+
+Nome do Campo:	 QtdCre
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade permitida para crescimento do estoque mínimo automatizado
+Título curto:	 Qtd. Per. Crescimento
+Título longo:	 Qtd. Permitida Crescimento
+
+Nome do Campo:	 QtdRed
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade permitida de redução do estoque mínimo automatizado
+Título curto:	 Qtd. Per. Redução
+Título longo:	 Qtd. Permitida Redução
+
+Nome do Campo:	 PerAum
+Tipo do Campo:	 Number(005,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9,99
+Descrição:	 Percentual de aumento do estoque mínimo automatizado
+Título curto:	 % Aumento
+Título longo:	 % Aumento
+
+Nome do Campo:	 PerRed
+Tipo do Campo:	 Number(005,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9,99
+Descrição:	 Percentual de redução do estoque mínimo automatizado
+Título curto:	 % Redução
+Título longo:	 % Redução
+
+Nome do Campo:	 DatAtu
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da última alteração do registro
+Título curto:	 Data Últ. Alter.
+Título longo:	 Data Última Alteração
+
+Nome do Campo:	 HorAtu
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora da última alteração do registro
+Título curto:	 Hora Últ. Alter.
+Título longo:	 Hora Última Alteração
+
+Nome do Campo:	 ObsAem
+Tipo do Campo:	 String(250)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #(40,2)#
+Descrição:	 Observação da análise do estoque mínimo automatizado
+Título curto:	 Obs.
+Título longo:	 Observação
+
+Nome da Chave primária:	 CP_E210HEM
+Campos da Chave primária:	 IdeUni
+
+Total de relacionamentos: 0
+
+---------------------
+Tabela: E210HIS
+
+Descrição: Estoques - Histórico de reserva 
+Total de campos: 12 
+Nome do Campo:	 IdeUni
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Identificador de registro
+Título curto:	 Ident. Registro
+Título longo:	 Identificador Registro
+
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 CodPro
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Código do produto
+Título curto:	 Produto
+Título longo:	 Produto
+
+Nome do Campo:	 CodDer
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Código da derivação
+Título curto:	 Deriv.
+Título longo:	 Derivação
+
+Nome do Campo:	 CodDep
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do depósito movimentado
+Título curto:	 Depós.
+Título longo:	 Depósito
+
+Nome do Campo:	 QtdRes
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade reservada
+Título curto:	 Qtd. Res.
+Título longo:	 Quantidade Reservada
+
+Nome do Campo:	 IdeDre
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Identificação do registro da tabela de documentos de reserva
+Título curto:	 Ide. Doc. Reserva
+Título longo:	 Identificação tabela documentos de reserva
+
+Nome do Campo:	 UsuGer
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Usuário responsável pela geração do registro
+Título curto:	 Usuário Geração
+Título longo:	 Usuário de Geração
+
+Nome do Campo:	 DatGer
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da geração do registro
+Título curto:	 Data Geração
+Título longo:	 Data da Geração
+
+Nome do Campo:	 HorGer
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora da geração do registro
+Título curto:	 Hora Geração
+Título longo:	 Hora da Geração
+
+Nome do Campo:	 NumSep
+Tipo do Campo:	 String(050)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[50]
+Descrição:	 Número de série do produto
+Título curto:	 Nº Série
+Título longo:	 Número de Série
+
+Nome do Campo:	 CodLot
+Tipo do Campo:	 String(050)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[50]
+Descrição:	 Código do lote de fabricação do produto
+Título curto:	 Lote Fab.
+Título longo:	 Lote Fabricação
+
+Nome da Chave primária:	 CP_E210HIS
+Campos da Chave primária:	 IdeUni
+
+Total de relacionamentos: 0
+
+---------------------
+Tabela: E210LFI
+
+Descrição: Estoques - Conteúdo das Embalagens de Estocagem (Volume - Lotes) 
+Total de campos: 7 
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 NumEmb
+Tipo do Campo:	 String(030)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 A[30]
+Descrição:	 Número da embalagem
+Título curto:	 Nr. Emb.
+Título longo:	 Número Embalagem
+
+Nome do Campo:	 SeqEfi
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Sequência do conteúdo da embalagem de estocagem
+Título curto:	 Seq. Emb.
+Título longo:	 Sequência Embalagem
+
+Nome do Campo:	 SeqLfi
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Sequência do lote na embalagem de estocagem
+Título curto:	 Seq. Lote Emb.
+Título longo:	 Sequência Lote Embalagem
+
+Nome do Campo:	 CodLot
+Tipo do Campo:	 String(050)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[50]
+Descrição:	 Código do Lote de Fabricação para estocagem
+Título curto:	 Lote Fab.
+Título longo:	 Lote Fabricação
+
+Nome do Campo:	 QtdIte
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade do item na embalagem
+Título curto:	 Qtd. Item Emb.
+Título longo:	 Qtd. Item Embalagem
+
+Nome do Campo:	 PesLiq
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Peso líquido do produto/embalagem
+Título curto:	 Peso Líq. Prod./Emb.
+Título longo:	 Peso Líquido Produto/Embalagem
+
+Nome da Chave primária:	 CP_E210LFI
+Campos da Chave primária:	 CodEmp;NumEmb;SeqEfi;SeqLfi
+
+Total de relacionamentos: 2
+Relacionamento:	 IR_E210LFI_001
+Tabela referenciada:	 E210EMB
+Campo(s) na origem:	 CodEmp;NumEmb
+Campo(s) no destino:	 CodEmp;NumEmb
+
+Relacionamento:	 IR_E210LFI_002
+Tabela referenciada:	 E210EFI
+Campo(s) na origem:	 CodEmp;NumEmb;SeqEfi
+Campo(s) no destino:	 CodEmp;NumEmb;SeqEfi
+
+
+---------------------
+Tabela: E210LIG
+
+Descrição: Estoques - Ligação de Movimentos 
+Total de campos: 5 
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 CodLig
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Código da ligação do movimento
+Título curto:	 Cód. Lig.
+Título longo:	 Código Ligação
+
+Nome do Campo:	 DatLig
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data dos movimentos
+Título curto:	 Data Mov.
+Título longo:	 Data Movimento
+
+Nome do Campo:	 UsuLig
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Número do cadastro do usuário responsável pelo movimento
+Título curto:	 Resp.
+Título longo:	 Responsável
+
+Nome do Campo:	 HorLig
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora da digitação do movimento
+Título curto:	 Hora
+Título longo:	 Hora
+
+Nome da Chave primária:	 CP_E210LIG
+Campos da Chave primária:	 CodEmp;CodLig
+
+Total de relacionamentos: 0
+
+---------------------
+Tabela: E210MEA
+
+Descrição: Estoques - Movimento de estoque agrupado 
+Total de campos: 7 
+Nome do Campo:	 SeqMea
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Identificador de registro
+Título curto:	 Ident. Registro
+Título longo:	 Identificador Registro
+
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 CodPro
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Código do produto
+Título curto:	 Produto
+Título longo:	 Produto
+
+Nome do Campo:	 CodDer
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Código da derivação
+Título curto:	 Deriv.
+Título longo:	 Derivação
+
+Nome do Campo:	 CodDep
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do depósito
+Título curto:	 Depósito
+Título longo:	 Depósito
+
+Nome do Campo:	 DatMov
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da movimentação do estoque
+Título curto:	 Data Mov.
+Título longo:	 Data Movimento
+
+Nome do Campo:	 SeqMov
+Tipo do Campo:	 Number(006,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZ9
+Descrição:	 Sequência de movimento na data de movimentação
+Título curto:	 Seq. Mov.
+Título longo:	 Sequência Movimento
+
+Nome da Chave primária:	 CP_E210MEA
+Campos da Chave primária:	 SeqMea
+
+Nome do Índice:	 E210MEAIndice1
+Tipo do Índice:	 Não unico
+Campo(s):	 CodEmp;CodPro;CodDer;CodDep
+
+Nome do Índice:	 E210MEAIndice2
+Tipo do Índice:	 Não unico
+Campo(s):	 CodEmp;CodPro;CodDer;CodDep;DatMov;SeqMov
+
+Total de relacionamentos: 0
+
+---------------------
+Tabela: E210MEA_TMP
+
+Descrição: Estoques - Movimento de estoque agrupado - Temporária 
+Total de campos: 13 
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 CodFil
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial
+Título curto:	 Filial
+Título longo:	 Filial
+
+Nome do Campo:	 CodSnf
+Tipo do Campo:	 String(003)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[3]
+Descrição:	 Código da série da nota fiscal
+Título curto:	 Série NF
+Título longo:	 Série NF
+
+Nome do Campo:	 NumNfv
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Número da nota fiscal de saída
+Título curto:	 Nr. NF
+Título longo:	 Número NF
+
+Nome do Campo:	 SeqIpv
+Tipo do Campo:	 Number(003,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZ9
+Descrição:	 Sequência do item na nota fiscal de saída
+Título curto:	 Seq.
+Título longo:	 Sequência
+
+Nome do Campo:	 CodPro
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Código do produto
+Título curto:	 Produto
+Título longo:	 Produto
+
+Nome do Campo:	 CodDer
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Código da derivação
+Título curto:	 Deriv.
+Título longo:	 Derivação
+
+Nome do Campo:	 CodDep
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do depósito
+Título curto:	 Depósito
+Título longo:	 Depósito
+
+Nome do Campo:	 DatEmi
+Tipo do Campo:	 Date
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 
+Título curto:	 
+Título longo:	 
+
+Nome do Campo:	 TnsEst
+Tipo do Campo:	 String(005)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[5]
+Descrição:	 Código da transação
+Título curto:	 Trans.
+Título longo:	 Transação
+
+Nome do Campo:	 QtdMov
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade do movimento 
+Título curto:	 Qtd. Mov.
+Título longo:	 Quantidade Movimento
+
+Nome do Campo:	 SeqAgr
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Sequência do agrupamento
+Título curto:	 Seq. agrupamento
+Título longo:	 Sequência do agrupamento
+
+Nome do Campo:	 SeqPmv
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Sequência da pendência
+Título curto:	 Seq. pendência
+Título longo:	 Sequência da pendência
+
+Total de relacionamentos: 0
+
+---------------------
+Tabela: E210MED
+
+Descrição: Estoques - Preço médio por filial 
+Total de campos: 14 
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 CodFil
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial 
+Título curto:	 Filial
+Título longo:	 Filial
+
+Nome do Campo:	 CodPro
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Código do produto 
+Título curto:	 Produto
+Título longo:	 Produto
+
+Nome do Campo:	 CodDer
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Código da derivação do produto
+Título curto:	 Derivação
+Título longo:	 Derivação
+
+Nome do Campo:	 PreMed
+Tipo do Campo:	 Number(021,10)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZ.ZZZ.ZZZ.ZZ9,9[10]
+Descrição:	 Preço médio
+Título curto:	 Preço médio
+Título longo:	 Preço médio
+
+Nome do Campo:	 DatMed
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data base da última atualização do preço médio
+Título curto:	 Data Preço Médio
+Título longo:	 Data Preço Médio
+
+Nome do Campo:	 UsuMed
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Usuário responsável pela última atualização do preço médio
+Título curto:	 Usuário
+Título longo:	 Usuário 
+
+Nome do Campo:	 HorMed
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora da última atualização do preço médio
+Título curto:	 Hora
+Título longo:	 Hora
+
+Nome do Campo:	 PreCus
+Tipo do Campo:	 Number(021,10)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZ.ZZZ.ZZZ.ZZ9,9[10]
+Descrição:	 Preço de custo 
+Título curto:	 Preço Custo
+Título longo:	 Preço Custo
+
+Nome do Campo:	 CusIcm
+Tipo do Campo:	 Number(015,6)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[6]
+Descrição:	 Preço de custo dos produtos com valor de ICMS
+Título curto:	 Preço Custo ICMS
+Título longo:	 Preço Custo ICMS
+
+Nome do Campo:	 DatCus
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data base do preço de custo
+Título curto:	 Data Preço Custo
+Título longo:	 Data Preço Custo
+
+Nome do Campo:	 PrmIcm
+Tipo do Campo:	 Number(015,6)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[6]
+Descrição:	 Preço Médio do valor total de ICMS
+Título curto:	 Preço Méd. ICMS
+Título longo:	 Preço Médio ICMS
+
+Nome do Campo:	 DatIcm
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data base da última atualização do preço médio de icms
+Título curto:	 Data Preço Médio ICMS
+Título longo:	 Data Preço Médio ICMS
+
+Nome do Campo:	 PrmRci
+Tipo do Campo:	 Number(021,10)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZ.ZZZ.ZZZ.ZZ9,9[10]
+Descrição:	 Preço médio para Transferência de Crédito de ICMS
+Título curto:	 Pr. Méd. Créd. ICMS
+Título longo:	 Pr. Méd. p/ Transf. Créd. de ICMS
+
+Nome da Chave primária:	 CP_E210MED
+Campos da Chave primária:	 CodEmp;CodFil;CodPro;CodDer
+
+Total de relacionamentos: 0
+
+---------------------
+Tabela: E210MIN
+
+Descrição: Estoques - Quantidades Mínimas para Reposição 
+Total de campos: 6 
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 CodPro
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Código do produto em estoque
+Título curto:	 Produto
+Título longo:	 Produto
+
+Nome do Campo:	 CodDer
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Código da derivação do produto em estoque
+Título curto:	 Deriv.
+Título longo:	 Derivação
+
+Nome do Campo:	 CodDep
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do depósito 
+Título curto:	 Depós.
+Título longo:	 Depósito
+
+Nome do Campo:	 QtdMin
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade  mínima em estoque para análise de reposição
+Título curto:	 Qtd. Mín.
+Título longo:	 Quantidade Estoque Mínimo para Reposição
+
+Nome do Campo:	 QtdAcu
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade já acumulada para análise de reposição
+Título curto:	 Qtd. Acu.
+Título longo:	 Quantidade Estoque Acumulada
+
+Nome da Chave primária:	 CP_E210MIN
+Campos da Chave primária:	 CodEmp;CodPro;CodDer;CodDep
+
+Total de relacionamentos: 0
+
+---------------------
+Tabela: E210MMF
+
+Descrição: Estoques - Preço Médio Mensal Fixo 
+Total de campos: 18 
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 CodFil
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial 
+Título curto:	 Filial
+Título longo:	 Filial
+
+Nome do Campo:	 CodPro
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Código do produto 
+Título curto:	 Produto
+Título longo:	 Produto
+
+Nome do Campo:	 CodDer
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Código da derivação do produto
+Título curto:	 Derivação
+Título longo:	 Derivação
+
+Nome do Campo:	 MesAno
+Tipo do Campo:	 Date
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 MM/YYYY
+Descrição:	 Mês e ano correspondente as informações
+Título curto:	 Mês e Ano 
+Título longo:	 Mês e Ano 
+
+Nome do Campo:	 QtdMmf
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Saldo em quantidade no mês para média mensal fixa
+Título curto:	 Qtd.Med.Mens.Fix
+Título longo:	 Quantidade para média mensal fixa
+
+Nome do Campo:	 VlrMmf
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Saldo em valor no mês para média mensal fixa
+Título curto:	 Vlr.Med.Mens.Fix
+Título longo:	 Valor para média mensal fixa
+
+Nome do Campo:	 IcmMmf
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Saldo em valor de ICMS no mês para média mensal fixa
+Título curto:	 Vlr.Icms.Mens.Fix
+Título longo:	 Valor ICMS média mensal fixa
+
+Nome do Campo:	 PrmMmf
+Tipo do Campo:	 Number(015,6)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[6]
+Descrição:	 Preço médio mensal fixo
+Título curto:	 Pre.Med.Mens.Fix
+Título longo:	 Preço Médio Mensal Fixo
+
+Nome do Campo:	 PmiMmf
+Tipo do Campo:	 Number(015,6)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[6]
+Descrição:	 Preço médio mensal fixo de ICMS
+Título curto:	 Pre.Med.Mens.Fix.ICM
+Título longo:	 Preço Médio Mensal Fixo ICMS
+
+Nome do Campo:	 DatGer
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data base da geração do registro
+Título curto:	 Data Geração
+Título longo:	 Data Geração 
+
+Nome do Campo:	 UsuGer
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Usuário responsável pela geraçao do registro
+Título curto:	 Usuário Geração
+Título longo:	 Usuário Geração
+
+Nome do Campo:	 HorGer
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora da geração do registro
+Título curto:	 Hora Geração
+Título longo:	 Hora Geração
+
+Nome do Campo:	 SalMes
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Este saldo corresponde ao mês atual ou foi buscado de outro mês?
+Título curto:	 Saldo do Mês?
+Título longo:	 Saldo do Mês?
+
+Nome do Campo:	 PreFix
+Tipo do Campo:	 Number(015,6)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[6]
+Descrição:	 Custo médio fixo
+Título curto:	 Custo méd. fixo
+Título longo:	 Custo médio fixo
+
+Nome do Campo:	 IcmFix
+Tipo do Campo:	 Number(019,6)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZZ.ZZZ.ZZZ.ZZ9,9[6]
+Descrição:	 Valor do ICMS médio fixo dos produtos acabados
+Título curto:	 Vlr. ICMS médio fixo
+Título longo:	 Valor ICMS médio fixo
+
+Nome do Campo:	 USU_PreFix
+Tipo do Campo:	 Number(015,6)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[6]
+Descrição:	 Custo médio fixo
+Título curto:	 Custo méd. fixo
+Título longo:	 Custo médio fixo
+
+Nome do Campo:	 USU_ICMFIX
+Tipo do Campo:	 Number(015,6)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[6]
+Descrição:	 Valor do ICMS médio fixo
+Título curto:	 ICMS médio fixo
+Título longo:	 ICMS médio fixo
+
+Nome da Chave primária:	 CP_E210MMF
+Campos da Chave primária:	 CodEmp;CodFil;CodPro;CodDer;MesAno
+
+Nome do Índice:	 E210MMFIndice1
+Tipo do Índice:	 Não unico
+Campo(s):	 CodEmp;CodPro;CodDer
+
+Total de relacionamentos: 4
+Relacionamento:	 IR_E210MMF_000
+Tabela referenciada:	 E070EMP
+Campo(s) na origem:	 CodEmp
+Campo(s) no destino:	 CodEmp
+
+Relacionamento:	 IR_E210MMF_001
+Tabela referenciada:	 E070FIL
+Campo(s) na origem:	 CodEmp;CodFil
+Campo(s) no destino:	 CodEmp;CodFil
+
+Relacionamento:	 IR_E210MMF_002
+Tabela referenciada:	 E075PRO
+Campo(s) na origem:	 CodEmp;CodPro
+Campo(s) no destino:	 CodEmp;CodPro
+
+Relacionamento:	 IR_E210MMF_003
+Tabela referenciada:	 E075DER
+Campo(s) na origem:	 CodEmp;CodPro;CodDer
+Campo(s) no destino:	 CodEmp;CodPro;CodDer
+
+
+---------------------
+Tabela: E210MPM
+
+Descrição: Estoques - Movimentos - Preço Médio Depósito 
+Total de campos: 8 
+Nome do Campo:	 IdeUni
+Tipo do Campo:	 String(050)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 A[38]
+Descrição:	 Identificação do movimento
+Título curto:	 Id. Mov.
+Título longo:	 Id. Mov.
+
+Nome do Campo:	 IdePmd
+Tipo do Campo:	 String(050)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 A[38]
+Descrição:	 Identificação do mov. preço médio depósito
+Título curto:	 Id. Mov. Pre. Medio
+Título longo:	 Id. Mov. Pre. Medio
+
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 CodDep
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do depósito
+Título curto:	 Depósito
+Título longo:	 Depósito
+
+Nome do Campo:	 CodPro
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Código do produto movimentado
+Título curto:	 Produto
+Título longo:	 Produto
+
+Nome do Campo:	 CodDer
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Código da derivação do produto movimentado
+Título curto:	 Deriv.
+Título longo:	 Derivação
+
+Nome do Campo:	 DatMov
+Tipo do Campo:	 Date
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da movimentação do estoque
+Título curto:	 Data Mov.
+Título longo:	 Data Movimento
+
+Nome do Campo:	 SeqMov
+Tipo do Campo:	 Number(006,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZ9
+Descrição:	 Sequência de movimento na data de movimentação
+Título curto:	 Seq. Mov.
+Título longo:	 Sequência Movimento
+
+Nome da Chave primária:	 CP_E210MPM
+Campos da Chave primária:	 IdeUni
+
+Nome do Índice:	 E210MPMindice1
+Tipo do Índice:	 Unico
+Campo(s):	 CodEmp;CodPro;CodDer;CodDep;DatMov;SeqMov;IdePmd
+
+Total de relacionamentos: 1
+Relacionamento:	 IR_E210MPM_001
+Tabela referenciada:	 E210PMD
+Campo(s) na origem:	 IdePmd
+Campo(s) no destino:	 IdeUni
+
+
+---------------------
+Tabela: E210MVP
+
+Descrição: Estoques - Movimentos 
+Total de campos: 146 
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 CodPro
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Código do produto movimentado
+Título curto:	 Produto
+Título longo:	 Produto
+
+Nome do Campo:	 CodDer
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Código da derivação do produto movimentado
+Título curto:	 Deriv.
+Título longo:	 Derivação
+
+Nome do Campo:	 CodDep
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do depósito movimentado
+Título curto:	 Depós.
+Título longo:	 Depósito
+
+Nome do Campo:	 DatMov
+Tipo do Campo:	 Date
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da movimentação do estoque
+Título curto:	 Data Mov.
+Título longo:	 Data Movimento
+
+Nome do Campo:	 SeqMov
+Tipo do Campo:	 Number(006,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZ9
+Descrição:	 Sequência de movimento na data de movimentação
+Título curto:	 Seq. Mov.
+Título longo:	 Sequência Movimento
+
+Nome do Campo:	 DatFec
+Tipo do Campo:	 Date
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data base para o fechamento do estoque
+Título curto:	 Data Fec.
+Título longo:	 Data Fechamento
+
+Nome do Campo:	 SeqFec
+Tipo do Campo:	 Number(006,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZ9
+Descrição:	 Sequência base para o fechamento do estoque
+Título curto:	 Seq. Fec.
+Título longo:	 Sequência Fechamento
+
+Nome do Campo:	 FilDep
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial que o depósito pertence
+Título curto:	 Filial Dep.
+Título longo:	 Filial Depósito
+
+Nome do Campo:	 MskDep
+Tipo do Campo:	 String(018)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[18]
+Descrição:	 Máscara do depósito
+Título curto:	 Máscara
+Título longo:	 Máscara
+
+Nome do Campo:	 NivDep
+Tipo do Campo:	 Number(001,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 9[1]
+Descrição:	 Nível do depósito conforme a máscara
+Título curto:	 Nivel
+Título longo:	 Nível
+
+Nome do Campo:	 CodTns
+Tipo do Campo:	 String(005)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[5]
+Descrição:	 Código da transação de movimentação de estoque
+Título curto:	 Trans.
+Título longo:	 Transação
+
+Nome do Campo:	 EstMov
+Tipo do Campo:	 String(002)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[2]
+Descrição:	 Tipo do estoque movimentado
+Título curto:	 Est. Mov.
+Título longo:	 Estoque Movimentado
+
+Nome do Campo:	 EstEos
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Entrada ou saída de estoque
+Título curto:	 Ent./Saída
+Título longo:	 Entrada ou Saída
+
+Nome do Campo:	 EstVmv
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Forma de valorização do movimento
+Título curto:	 Forma Vlr. Mov.
+Título longo:	 Forma Valorização Movimento
+
+Nome do Campo:	 OriOrp
+Tipo do Campo:	 String(003)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[3]
+Descrição:	 Código da Origem de Produto da OP (Quando Movimento é de uma OP específica)
+Título curto:	 Ori. OP
+Título longo:	 Origem da OP
+
+Nome do Campo:	 NumDoc
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Número de documento base da movimentação
+Título curto:	 Doc.
+Título longo:	 Documento
+
+Nome do Campo:	 DatFab
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data de fabricação do lote 
+Título curto:	 Data Fab.
+Título longo:	 Data Fabricação
+
+Nome do Campo:	 HorFab
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora de fabricação do lote do produto
+Título curto:	 Hora Fabric.
+Título longo:	 Hora Fabricação
+
+Nome do Campo:	 DatEnt
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da entrada do produto no depósito
+Título curto:	 Data Entrada
+Título longo:	 Data Entrada
+
+Nome do Campo:	 DatVlt
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data de validade do lote
+Título curto:	 Data Valid. Lote 
+Título longo:	 Data Validade Lote
+
+Nome do Campo:	 HorVlt
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora de validade do lote do produto
+Título curto:	 Hora Valid.
+Título longo:	 Hora Validade
+
+Nome do Campo:	 CodLot
+Tipo do Campo:	 String(050)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[50]
+Descrição:	 Código do Lote de Fabricação para estocagem
+Título curto:	 Lote Fab.
+Título longo:	 Lote Fabricação
+
+Nome do Campo:	 NumSep
+Tipo do Campo:	 String(050)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[50]
+Descrição:	 Número de série do produto
+Título curto:	 Nº Série
+Título longo:	 Número de Série
+
+Nome do Campo:	 ObsMvp
+Tipo do Campo:	 String(250)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #(40,2)#
+Descrição:	 Observação do fechamento de estoque
+Título curto:	 Obs.Fec.
+Título longo:	 Observação Fechamento
+
+Nome do Campo:	 QtdMov
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade do movimento 
+Título curto:	 Qtd. Mov.
+Título longo:	 Quantidade Movimento
+
+Nome do Campo:	 VlrMov
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor do movimento
+Título curto:	 Vlr. Mov.
+Título longo:	 Valor Movimento
+
+Nome do Campo:	 QtdAnt
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade em estoque antes do movimento
+Título curto:	 Qtd. Est. Ant.
+Título longo:	 Quantidade Estoque Anterior
+
+Nome do Campo:	 VlrAnt
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor do estoque antes do movimento
+Título curto:	 Vlr. Est. Ant.
+Título longo:	 Valor Estoque Anterior
+
+Nome do Campo:	 QtdEst
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade em estoque total após o movimento
+Título curto:	 Qtd. Est. Tot
+Título longo:	 Quantidade Estoque Total
+
+Nome do Campo:	 VlrEst
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor em estoque total após o movimento
+Título curto:	 Vlr. Est. Tot.
+Título longo:	 Valor Estoque Total
+
+Nome do Campo:	 PrmEst
+Tipo do Campo:	 Number(021,10)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZ.ZZZ.ZZZ.ZZ9,9[10]
+Descrição:	 Preço Médio do estoque total
+Título curto:	 Preço Méd. Est.
+Título longo:	 Preço Médio Estoque
+
+Nome do Campo:	 ProTrf
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Código do produto transferido (para movimentos de transferência)
+Título curto:	 Prod. Trans.
+Título longo:	 Produto Transferido
+
+Nome do Campo:	 DerTrf
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Código da derivação do produto transferido (p/ movimentos de transferência)
+Título curto:	 Deriv. Trans.
+Título longo:	 Derivação Produto Transferido
+
+Nome do Campo:	 DepTrf
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do depósito transferido (para movimentos de transferência)
+Título curto:	 Depós. Trans.
+Título longo:	 Depósito Transferido
+
+Nome do Campo:	 SeqTrf
+Tipo do Campo:	 Number(006,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZ9
+Descrição:	 Sequência de movimento transferido (p/ movimentos de transferência)
+Título curto:	 Seq. Mov. Trans.
+Título longo:	 Sequência Movimento Transferido
+
+Nome do Campo:	 UsuRes
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Número do cadastro do usuário responsável pelo movimento
+Título curto:	 Resp.
+Título longo:	 Responsável
+
+Nome do Campo:	 CodCcu
+Tipo do Campo:	 String(009)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[9]
+Descrição:	 Código do centro de custo do usuário responsável
+Título curto:	 C. Custo
+Título longo:	 Centro Custo
+
+Nome do Campo:	 UsuRec
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Usuário recebedor do produto solicitado
+Título curto:	 Usu. Rec.
+Título longo:	 Usuário Recebedor
+
+Nome do Campo:	 CtaRed
+Tipo do Campo:	 Number(007,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZZ.ZZ9
+Descrição:	 Conta contábil reduzida
+Título curto:	 Cta. Ctb.
+Título longo:	 Conta Contábil
+
+Nome do Campo:	 NumPrj
+Tipo do Campo:	 Number(008,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ.ZZZ.ZZ9
+Descrição:	 Número do projeto
+Título curto:	 Projeto
+Título longo:	 Projeto
+
+Nome do Campo:	 CodFpj
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da fase do projeto
+Título curto:	 Fase
+Título longo:	 Fase
+
+Nome do Campo:	 CtaFin
+Tipo do Campo:	 Number(007,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZZ.ZZ9
+Descrição:	 Conta financeira reduzida
+Título curto:	 Cta. Fin.
+Título longo:	 Conta Financeira 
+
+Nome do Campo:	 LctFin
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Indicativo se o movimento foi lançado no plano financeiro
+Título curto:	 Lança PF
+Título longo:	 Lançado Plano Financeiro
+
+Nome do Campo:	 NumLot
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Número do lote contábil
+Título curto:	 Nº Lote
+Título longo:	 Nº Lote Contábil
+
+Nome do Campo:	 NumEme
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Número do documento de entrada do movimento de estoque
+Título curto:	 Nr. Doc
+Título longo:	 Número Documento
+
+Nome do Campo:	 SeqEme
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZ9
+Descrição:	 Sequência do produto no documento de movimento de estoque
+Título curto:	 Seq. Mov.
+Título longo:	 Sequência
+
+Nome do Campo:	 CodFil
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial da nota fiscal de saída
+Título curto:	 Filial NFS
+Título longo:	 Filial NF Saída
+
+Nome do Campo:	 CodSnf
+Tipo do Campo:	 String(003)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[3]
+Descrição:	 Código da série da nota fiscal de saída
+Título curto:	 Série NF
+Título longo:	 Série NF
+
+Nome do Campo:	 NumNfv
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Número da Nota Fiscal de Saída
+Título curto:	 NFS
+Título longo:	 Nº NF Saída
+
+Nome do Campo:	 SeqIpv
+Tipo do Campo:	 Number(003,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9
+Descrição:	 Sequência do item na nota fiscal de saída
+Título curto:	 Seq. NFS
+Título longo:	 Sequência NF Saída
+
+Nome do Campo:	 CodCli
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Código do cliente para os movimentos consignados
+Título curto:	 Cliente
+Título longo:	 Cliente
+
+Nome do Campo:	 FilOcp
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial da Ordem de Compra
+Título curto:	 Filial
+Título longo:	 Filial
+
+Nome do Campo:	 NumOcp
+Tipo do Campo:	 Number(008,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ.ZZZ.ZZ9
+Descrição:	 Número da ordem de compra
+Título curto:	 OC
+Título longo:	 Nº Ordem Compra
+
+Nome do Campo:	 SeqIpo
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Sequência de item da ordem de compra
+Título curto:	 Seq.
+Título longo:	 Sequência
+
+Nome do Campo:	 FilNfc
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial da nota fiscal de entrada
+Título curto:	 Filial NFE
+Título longo:	 Filial NF Entrada
+
+Nome do Campo:	 CodFor
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Código do fornecedor para os movimentos consignados
+Título curto:	 Forn.
+Título longo:	 Fornecedor
+
+Nome do Campo:	 NumNfc
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Número da Nota Fiscal de Entrada
+Título curto:	 NFE
+Título longo:	 Nº NF Entrada
+
+Nome do Campo:	 SnfNfc
+Tipo do Campo:	 String(003)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[3]
+Descrição:	 Código da série da nota fiscal de entrada
+Título curto:	 Série NFE
+Título longo:	 Série NF Entrada
+
+Nome do Campo:	 SeqIpc
+Tipo do Campo:	 Number(003,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9
+Descrição:	 Sequência do item da nota fiscal de entrada
+Título curto:	 Seq. Item NFE
+Título longo:	 Sequência Item NF Entrada
+
+Nome do Campo:	 UsuDig
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Número do cadastro do usuário digitador
+Título curto:	 Digitador
+Título longo:	 Usuário Digitador
+
+Nome do Campo:	 DatDig
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da digitação do movimento
+Título curto:	 Data
+Título longo:	 Data Digitação
+
+Nome do Campo:	 HorDig
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora da digitação do movimento
+Título curto:	 Hora
+Título longo:	 Hora Digitação
+
+Nome do Campo:	 CodLig
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Código da ligação do movimento
+Título curto:	 Cód. Lig.
+Título longo:	 Código Ligação
+
+Nome do Campo:	 MotMvp
+Tipo do Campo:	 String(250)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #(40,2)#
+Descrição:	 Observação do movimento de estoque
+Título curto:	 Obs.Mov.
+Título longo:	 Observação Movimento
+
+Nome do Campo:	 DatInv
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data base do inventário
+Título curto:	 Data Invent.
+Título longo:	 Data Inventário
+
+Nome do Campo:	 ExpWms
+Tipo do Campo:	 Number(001,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 9[1]
+Descrição:	 Indicativo se o movimento de estoque foi exportado para o sistema WMS
+Título curto:	 Exp. WMS
+Título longo:	 Exportado WMS
+
+Nome do Campo:	 VlrDm1
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Valor Dimensão 1
+Título curto:	 Dimensão 1
+Título longo:	 Dimensão 1
+
+Nome do Campo:	 VlrDm2
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Valor Dimensão 2
+Título curto:	 Dimensão 2
+Título longo:	 Dimensão 2
+
+Nome do Campo:	 VlrDm3
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Valor Dimensão 3
+Título curto:	 Dimensão 3
+Título longo:	 Dimensão 3
+
+Nome do Campo:	 VlrDm4
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Valor Dimensão 4
+Título curto:	 Dimensão 4
+Título longo:	 Dimensão 4
+
+Nome do Campo:	 VlrDm5
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Valor Dimensão 5
+Título curto:	 Dimensão 5
+Título longo:	 Dimensão 5
+
+Nome do Campo:	 VlrDm6
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Valor Dimensão 6
+Título curto:	 Dimensão 6
+Título longo:	 Dimensão 6
+
+Nome do Campo:	 EstWms
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Indicativo se a transação de estoque integra o movimento com o WMS
+Título curto:	 Integra com WMS
+Título longo:	 Integra com WMS
+
+Nome do Campo:	 EstCoc
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Indicativo se o movimento é consignado a clientes
+Título curto:	 Csg. Cli.
+Título longo:	 Consignação Cliente
+
+Nome do Campo:	 EstCof
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Indicativo se o movimento é consignado de fornecedores
+Título curto:	 Csg. For.
+Título longo:	 Consignação Fornecedor
+
+Nome do Campo:	 FilPed
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial do item de pedido que gerou o movimento
+Título curto:	 Filial Pedido
+Título longo:	 Filial Pedido
+
+Nome do Campo:	 NumPed
+Tipo do Campo:	 Number(008,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ.ZZZ.ZZ9
+Descrição:	 Número do pedido do item de pedido que gerou o movimento
+Título curto:	 Pedido
+Título longo:	 Número Pedido
+
+Nome do Campo:	 SeqIpd
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Sequência de item do pedido que gerou o movimento
+Título curto:	 Item Pedido
+Título longo:	 Seq. Item Pedido
+
+Nome do Campo:	 UtiRep
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Indicativo se movimento já foi utilizado na análise de reposição
+Título curto:	 Utilizado em reposição
+Título longo:	 Utilizado em reposição
+
+Nome do Campo:	 FilAne
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial da análise de embarque
+Título curto:	 Filial análise embarque
+Título longo:	 Filial análise embarque
+
+Nome do Campo:	 NumAne
+Tipo do Campo:	 Number(012,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZZ.ZZ9
+Descrição:	 Número da análise de embarque
+Título curto:	 Nr. Anál.  Emb.
+Título longo:	 Número análise embarque
+
+Nome do Campo:	 NumPfa
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Número da pré-fatura
+Título curto:	 Nr. Pré-Fat.
+Título longo:	 Número Pré-fatura
+
+Nome do Campo:	 SeqPes
+Tipo do Campo:	 Number(003,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9
+Descrição:	 Sequência do item na pré-fatura
+Título curto:	 Seq. item pré-fatura
+Título longo:	 Seq. item pré-fatura
+
+Nome do Campo:	 LotDes
+Tipo do Campo:	 String(050)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[50]
+Descrição:	 Código do Lote do produto no qual o lote em questão foi utilizado
+Título curto:	 Lote Destino
+Título longo:	 Lote Destino
+
+Nome do Campo:	 CodEtg
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Estágio de Produção
+Título curto:	 Est.
+Título longo:	 Estágio
+
+Nome do Campo:	 SeqCmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZ9
+Descrição:	 Sequência do Componente na utilização
+Título curto:	 Seq.
+Título longo:	 Sequência 
+
+Nome do Campo:	 AceFec
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Indicativo se este movimento foi inserido pelo fechamento dos estoques
+Título curto:	 Acerto Fec. Estoques
+Título longo:	 Acerto Fec. Estoques
+
+Nome do Campo:	 UltMdi
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Indicativo se o movimento em questão é o último movimento do dia para este produto/derivação/depósito
+Título curto:	 Último Mov. do dia
+Título longo:	 Último Mov. do dia
+
+Nome do Campo:	 CodBem
+Tipo do Campo:	 String(020)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[20]
+Descrição:	 Código do bem principal
+Título curto:	 Cód. Bem Principal
+Título longo:	 Código do Bem Principal
+
+Nome do Campo:	 FilCle
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial da coleta
+Título curto:	 Fil. Coleta
+Título longo:	 Filial Coleta
+
+Nome do Campo:	 NumCle
+Tipo do Campo:	 Number(008,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ.ZZZ.ZZ9
+Descrição:	 Número da coleta que gerou o movimento
+Título curto:	 Nº Coleta
+Título longo:	 Número Coleta
+
+Nome do Campo:	 VlrCm1
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor do movimento de estoque convertido para a moeda estrangeira 1
+Título curto:	 Valor conv. p/ moeda estrangeira 1
+Título longo:	 Valor conv. para moeda estrangeira 1
+
+Nome do Campo:	 DatCm1
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da cotação da moeda entrangeira 1
+Título curto:	 Data cotação moeda estrangeira 1
+Título longo:	 Data cotação moeda estrangeira 1
+
+Nome do Campo:	 CotCm1
+Tipo do Campo:	 Number(019,10)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[10]
+Descrição:	 Cotação da moeda estrangeira 1
+Título curto:	 Cotação da moeda estrang. 1
+Título longo:	 Cotação da moeda estrang. 1
+
+Nome do Campo:	 VlrCm2
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor do movimento de estoque convertido para a moeda estrangeira 2
+Título curto:	 Valor conv. p/ moeda estrangeira 2
+Título longo:	 Valor conv. para moeda estrangeira 2
+
+Nome do Campo:	 DatCm2
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da cotação da moeda entrangeira 2
+Título curto:	 Data cotação moeda estrangeira 2
+Título longo:	 Data cotação moeda estrangeira 2
+
+Nome do Campo:	 CotCm2
+Tipo do Campo:	 Number(019,10)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[10]
+Descrição:	 Cotação da moeda estrangeira 2
+Título curto:	 Cotação da moeda estrang. 2
+Título longo:	 Cotação da moeda estrang. 2
+
+Nome do Campo:	 SepDes
+Tipo do Campo:	 String(050)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[50]
+Descrição:	 Número de Série do produto no qual o componente em questão foi utilizado
+Título curto:	 Nº Série Destino
+Título longo:	 Nº Série Destino
+
+Nome do Campo:	 CodSlt
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do status do lote
+Título curto:	 Status Lote
+Título longo:	 Código Status Lote
+
+Nome do Campo:	 PerGer
+Tipo do Campo:	 Number(005,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9,99
+Descrição:	 Percentual de germinação
+Título curto:	 % Germinação
+Título longo:	 % Germinação
+
+Nome do Campo:	 PerPur
+Tipo do Campo:	 Number(005,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9,99
+Descrição:	 Percentual de pureza
+Título curto:	 % Pureza
+Título longo:	 % Pureza
+
+Nome do Campo:	 PerUmi
+Tipo do Campo:	 Number(005,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9,99
+Descrição:	 Percentual de umidade
+Título curto:	 % Umidade
+Título longo:	 % Umidade
+
+Nome do Campo:	 DatTes
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data do teste do produto
+Título curto:	 Data Teste
+Título longo:	 Data Teste
+
+Nome do Campo:	 CodEnd
+Tipo do Campo:	 String(020)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[20]
+Descrição:	 Código do endereçamento de produto
+Título curto:	 Endereçam.
+Título longo:	 Endereçamento
+
+Nome do Campo:	 CodSaf
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código da safra
+Título curto:	 Safra
+Título longo:	 Código Safra
+
+Nome do Campo:	 CodTrm
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do tratamento
+Título curto:	 Tratamento
+Título longo:	 Código Tratamento
+
+Nome do Campo:	 CodBnf
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do beneficiamento
+Título curto:	 Beneficiamento
+Título longo:	 Código Beneficiamento
+
+Nome do Campo:	 CodCat
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do categoria do lote
+Título curto:	 Categoria Lote
+Título longo:	 Código Categoria Lote
+
+Nome do Campo:	 VlrIcm
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor de ICMS
+Título curto:	 Vlr. ICMS
+Título longo:	 Valor ICMS
+
+Nome do Campo:	 PrmIcm
+Tipo do Campo:	 Number(015,6)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[6]
+Descrição:	 Preço Médio do valor total de ICMS
+Título curto:	 Preço Méd. ICMS
+Título longo:	 Preço Médio ICMS
+
+Nome do Campo:	 IcmAcf
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor total de ICMS acumulado para a filial
+Título curto:	 Vlr. ICMS da Filial
+Título longo:	 Vlr. ICMS da Filial
+
+Nome do Campo:	 CodPne
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da peneira
+Título curto:	 Peneira
+Título longo:	 Código Peneira
+
+Nome do Campo:	 CodEtp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da espécie/cultura
+Título curto:	 Espécie/cultura
+Título longo:	 Código da espécie/cultura
+
+Nome do Campo:	 CodCul
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da cultivar
+Título curto:	 Cultivar
+Título longo:	 Código Cultivar
+
+Nome do Campo:	 NumTer
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Número do termo de conformidade
+Título curto:	 Termo Conformidade
+Título longo:	 Nº Termo Conformidade
+
+Nome do Campo:	 NumAog
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Número do atestado de origem genética
+Título curto:	 Atestado Ori. Genética
+Título longo:	 Nº Atestado Origem Genética
+
+Nome do Campo:	 NumCer
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Número do certificado de sementes
+Título curto:	 Cert. Sementes
+Título longo:	 Nº Certificado Sementes
+
+Nome do Campo:	 NumBol
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Número do boletim de análise de sementes
+Título curto:	 Boletim Análise Sementes
+Título longo:	 Nº Boletim Análise Sementeas
+
+Nome do Campo:	 NumAmo
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Número da amostra
+Título curto:	 Amostra
+Título longo:	 Nº Amostra
+
+Nome do Campo:	 AmoNum
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZ9
+Descrição:	 Número da Amostra
+Título curto:	 Amostra
+Título longo:	 Amostra
+
+Nome do Campo:	 FilNfo
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial da nota fiscal de entrada origem da nota fiscal de frete
+Título curto:	 Fil. NFE Ori. Frete
+Título longo:	 Filial NFE Origem Frete
+
+Nome do Campo:	 NumNfo
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Número da nota fiscal de entrada origem da nota fiscal de frete
+Título curto:	 NFE Ori. Frete
+Título longo:	 Nº NF Entrada Origem Frete
+
+Nome do Campo:	 SnfNfo
+Tipo do Campo:	 String(003)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[3]
+Descrição:	 Código da série da nota fiscal de entrada origem da nota fiscal de frete
+Título curto:	 Série NFE Ori. Frete
+Título longo:	 Série NF Entrada Origem Frete
+
+Nome do Campo:	 ForNfo
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Código do fornecedor da nota fiscal de entrada origem da nota fiscal de frete
+Título curto:	 Forn. NFE Ori. Frete
+Título longo:	 Fornecedor NFE Origem Frete
+
+Nome do Campo:	 IndFab
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Indicativo se o lote se trata de lote de fabricante 
+Título curto:	 Lote de Fabricante
+Título longo:	 Lote de Fabricante
+
+Nome do Campo:	 CodFab
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do fabricante
+Título curto:	 Fabricante
+Título longo:	 Código Fabricante
+
+Nome do Campo:	 LotFab
+Tipo do Campo:	 String(050)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[50]
+Descrição:	 Código de lote do fabricante
+Título curto:	 Lote Fabricante
+Título longo:	 Lote Fabricante
+
+Nome do Campo:	 VltFab
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data de validade do produto do fabricante
+Título curto:	 Data Valid. Fabr.
+Título longo:	 Data Validade Fabricante
+
+Nome do Campo:	 ProFab
+Tipo do Campo:	 String(021)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 A[21]
+Descrição:	 Código do produto no fabricante
+Título curto:	 Cód. Prod. Fabr.
+Título longo:	 Código Produto Fabricante
+
+Nome do Campo:	 CodMar
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código da marca do produto
+Título curto:	 Marca
+Título longo:	 Marca do produto
+
+Nome do Campo:	 EstNeg
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Indicativo se depósito aceita ou não estoque negativo na geração do movimento
+Título curto:	 Ac. Est. Neg.
+Título longo:	 Aceita Estoque Negativo
+
+Nome do Campo:	 CalMmf
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 N
+Máscara:	 U[1]
+Descrição:	 Indicativo se o movimento calcula média mensal fixa 
+Título curto:	 Calc.Méd.Mens.Fixa
+Título longo:	 Calcula Média Mensal Fixa
+
+Nome do Campo:	 SeqSpr
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZ9
+Descrição:	 Sequência do subproduto da OP
+Título curto:	 Seq.Subprod.OP
+Título longo:	 Seq. Subproduto da OP
+
+Nome do Campo:	 IndMpc
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Indicativo de movimento de atendimento de produto comprado via requisição
+Título curto:	 Mov. Prod. Comprado
+Título longo:	 Mov. Prod. Comprado
+
+Nome do Campo:	 FilOcr
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Filial da ocorrência da assistência técnica
+Título curto:	 Filial da Ocorrência
+Título longo:	 Filial da Ocorrência
+
+Nome do Campo:	 NumOcr
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Número da Ocorrência (Protocolo)
+Título curto:	 Ocorrência
+Título longo:	 Número da Ocorrência
+
+Nome do Campo:	 CodMot
+Tipo do Campo:	 Number(006,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZ9
+Descrição:	 Código do motivo da observação ou situação
+Título curto:	 Motivo
+Título longo:	 Motivo
+
+Nome do Campo:	 NumFix
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Número da Fixação
+Título curto:	 Número da Fixação
+Título longo:	 Número da Fixação
+
+Nome do Campo:	 NumLan
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[8]9
+Descrição:	 Número sequencial do lançamento destinado ao controle do crédito acumulado
+Título curto:	 Núm. Lçto.
+Título longo:	 Número do Lançamento
+
+Nome do Campo:	 PerTrf
+Tipo do Campo:	 Number(007,4)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9,9999
+Descrição:	 Percentual do movimento
+Título curto:	 % Movimento
+Título longo:	 % Movimento
+
+Nome do Campo:	 CodFtr
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Código do fornecedor para os movimentos consignados em operação triangular
+Título curto:	 Forn. Op. Triangular
+Título longo:	 Forn. Consig. Op. Triangular
+
+Nome do Campo:	 IdeUG7
+Tipo do Campo:	 String(036)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 A[36]
+Descrição:	 Identificador único G7
+Título curto:	 Ident.Unico.G7
+Título longo:	 Identificador único G7
+
+Nome do Campo:	 USU_NumLan
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[8]9
+Descrição:	 Numero Lancamento CAT83
+Título curto:	 Num. Lct.
+Título longo:	 Num. Lct. CAT83
+
+Nome do Campo:	 USU_CCUOBS
+Tipo do Campo:	 String(250)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #(40,2)#
+Descrição:	 Centro de Custo Causador Observação
+Título curto:	 CCU Obs
+Título longo:	 CCU Observação
+
+Nome do Campo:	 USU_CCUCIE
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Centro de Custo Causador Ciente
+Título curto:	 CCU Ciente
+Título longo:	 CCU causador ciente
+
+Nome da Chave primária:	 CP_E210MVP
+Campos da Chave primária:	 CodEmp;CodPro;CodDer;CodDep;DatMov;SeqMov
+
+Nome do Índice:	 E210MVPIndice2
+Tipo do Índice:	 Não unico
+Campo(s):	 NumNfc;CodFor;CodEmp;FilNfc;SeqIpc
+
+Nome do Índice:	 E210MVPIndice3
+Tipo do Índice:	 Não unico
+Campo(s):	 CodSnf;NumNfv;CodEmp;CodFil;SeqIpv
+
+Nome do Índice:	 E210MVPIndice4
+Tipo do Índice:	 Não unico
+Campo(s):	 DatMov;CodEmp;CodPro;CodDer;CodDep;SeqMov
+
+Nome do Índice:	 E210MVPIndice5
+Tipo do Índice:	 Não unico
+Campo(s):	 CodEmp;CodLig;EstEos;EstMov
+
+Nome do Índice:	 E210MVPIndice6
+Tipo do Índice:	 Não unico
+Campo(s):	 FilDep;UltMdi;CodPro;CodDer;CodDep;CodEmp;EstMov;DatMov
+
+Nome do Índice:	 E210MVPIndice7
+Tipo do Índice:	 Não unico
+Campo(s):	 NumDoc;DatMov;OriOrp;CodEmp
+
+Total de relacionamentos: 1
+Relacionamento:	 IR_E210MVP_003
+Tabela referenciada:	 E210EST
+Campo(s) na origem:	 CodEmp;CodPro;CodDer;CodDep
+Campo(s) no destino:	 CodEmp;CodPro;CodDer;CodDep
+
+
+---------------------
+Tabela: E210OBS
+
+Descrição: Estoques - Observações 
+Total de campos: 67 
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 CodPro
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Código do produto movimentado
+Título curto:	 Produto
+Título longo:	 Produto
+
+Nome do Campo:	 CodDer
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Código da derivação do produto movimentado
+Título curto:	 Deriv.
+Título longo:	 Derivação
+
+Nome do Campo:	 CodDep
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do depósito movimentado
+Título curto:	 Depós.
+Título longo:	 Depósito
+
+Nome do Campo:	 DatObs
+Tipo do Campo:	 Date
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data base da observação 
+Título curto:	 Data Obs.
+Título longo:	 Data Base Observação
+
+Nome do Campo:	 SeqObs
+Tipo do Campo:	 Number(006,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZ9
+Descrição:	 Sequência da observação 
+Título curto:	 Seq. Obs.
+Título longo:	 Sequência Observação
+
+Nome do Campo:	 TipObs
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Tipo da observação
+Título curto:	 Tipo Obs.
+Título longo:	 Tipo Observação
+
+Nome do Campo:	 TexObs
+Tipo do Campo:	 String(250)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #(40,2)#
+Descrição:	 Texto da observação
+Título curto:	 Texto
+Título longo:	 Texto Observação
+
+Nome do Campo:	 CodTns
+Tipo do Campo:	 String(005)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[5]
+Descrição:	 Código da transação de movimentação de estoque
+Título curto:	 Trans.
+Título longo:	 Transação
+
+Nome do Campo:	 EstMov
+Tipo do Campo:	 String(002)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[2]
+Descrição:	 Tipo do estoque movimentado
+Título curto:	 Est. Mov.
+Título longo:	 Estoque Movimentado
+
+Nome do Campo:	 EstEos
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Entrada ou saída de estoque
+Título curto:	 Ent./Saída
+Título longo:	 Entrada ou Saída
+
+Nome do Campo:	 DatMov
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data do movimento do estoque
+Título curto:	 Data Mov.
+Título longo:	 Data Movimento
+
+Nome do Campo:	 SeqMov
+Tipo do Campo:	 Number(006,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZ9
+Descrição:	 Sequência de movimento na data de movimentação
+Título curto:	 Seq. Mov.
+Título longo:	 Sequência Movimento
+
+Nome do Campo:	 DatFec
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data base para o fechamento do estoque
+Título curto:	 Data Fec.
+Título longo:	 Data Fechamento
+
+Nome do Campo:	 SeqFec
+Tipo do Campo:	 Number(006,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZ9
+Descrição:	 Sequência base para o fechamento do estoque
+Título curto:	 Seq. Fec.
+Título longo:	 Sequência Fechamento
+
+Nome do Campo:	 FilDep
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial que o depósito pertence
+Título curto:	 Filial Dep.
+Título longo:	 Filial Depósito
+
+Nome do Campo:	 MskDep
+Tipo do Campo:	 String(018)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[18]
+Descrição:	 Máscara do depósito
+Título curto:	 Máscara
+Título longo:	 Máscara
+
+Nome do Campo:	 NivDep
+Tipo do Campo:	 Number(001,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 9[1]
+Descrição:	 Nível do depósito conforme a máscara
+Título curto:	 Nivel
+Título longo:	 Nível
+
+Nome do Campo:	 EstVmv
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Forma de valorização do movimento
+Título curto:	 Forma Vlr. Mov.
+Título longo:	 Forma Valorização Movimento
+
+Nome do Campo:	 DatFab
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data de fabricação do lote 
+Título curto:	 Data Fabr.
+Título longo:	 Data Fabricação
+
+Nome do Campo:	 DatEnt
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da entrada do produto no depósito
+Título curto:	 Data Ent.
+Título longo:	 Data Entrada
+
+Nome do Campo:	 DatVlt
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data de validade do lote de fabricação 
+Título curto:	 Data Valid. Lote 
+Título longo:	 Data Validade Lote
+
+Nome do Campo:	 CodLot
+Tipo do Campo:	 String(050)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[50]
+Descrição:	 Código do lote de fabricação para estocagem
+Título curto:	 Lote Fab.
+Título longo:	 Lote Fabricação
+
+Nome do Campo:	 NumSep
+Tipo do Campo:	 String(050)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[50]
+Descrição:	 Número de série do produto
+Título curto:	 Nº Série
+Título longo:	 Número de Série
+
+Nome do Campo:	 NumDoc
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Número de documento base da movimentação
+Título curto:	 Doc.
+Título longo:	 Documento
+
+Nome do Campo:	 ObsMvp
+Tipo do Campo:	 String(250)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #(40,2)#
+Descrição:	 Texto da observação do movimento de estoque
+Título curto:	 Obs. Mov.
+Título longo:	 Observação Movimento
+
+Nome do Campo:	 QtdMov
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade de movimento do estoque  
+Título curto:	 Qtd. Mov.
+Título longo:	 Quantidade Movimento
+
+Nome do Campo:	 VlrMov
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor do movimento de estoque
+Título curto:	 Valor
+Título longo:	 Valor
+
+Nome do Campo:	 QtdAnt
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade em estoques antes do movimento
+Título curto:	 Qtd. Est. Ant.
+Título longo:	 Quantidade Estoque Anterior
+
+Nome do Campo:	 VlrAnt
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor do estoque antes do movimento
+Título curto:	 Vlr. Est. Ant.
+Título longo:	 Valor Estoque Anterior
+
+Nome do Campo:	 QtdEst
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade em estoque total após o movimento
+Título curto:	 Qtd. Est. Tot
+Título longo:	 Quantidade Estoque Total
+
+Nome do Campo:	 VlrEst
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor em estoque total após o movimento
+Título curto:	 Vlr. Est. Tot.
+Título longo:	 Valor Estoque Total
+
+Nome do Campo:	 PrmEst
+Tipo do Campo:	 Number(021,10)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZ.ZZZ.ZZZ.ZZ9,9[10]
+Descrição:	 Preço Médio do estoque total
+Título curto:	 Preço Méd. Est.
+Título longo:	 Preço Médio Estoque
+
+Nome do Campo:	 ProTrf
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Código do produto transferido para movimentos de transferência
+Título curto:	 Prod. Trans.
+Título longo:	 Produto Transferido
+
+Nome do Campo:	 DerTrf
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Código da derivação do produto transferido p/ movimentos de transferência
+Título curto:	 Deriv. Prod. Trans.
+Título longo:	 Derivação Produto Transferido
+
+Nome do Campo:	 DepTrf
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do depósito transferido para movimentos de transferência
+Título curto:	 Depós. Trans.
+Título longo:	 Depósito Transferido
+
+Nome do Campo:	 UsuRes
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Número do cadastro do usuário responsável pelo movimento
+Título curto:	 Resp.
+Título longo:	 Responsável
+
+Nome do Campo:	 CodCcu
+Tipo do Campo:	 String(009)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[9]
+Descrição:	 Código do centro de custo do usuário responsável
+Título curto:	 C. Custo
+Título longo:	 Centro Custo
+
+Nome do Campo:	 UsuRec
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Usuário recebedor do produto solicitado
+Título curto:	 Usu. Rec.
+Título longo:	 Usuário Recebedor
+
+Nome do Campo:	 NumPrj
+Tipo do Campo:	 Number(008,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ.ZZZ.ZZ9
+Descrição:	 Número do projeto
+Título curto:	 Projeto
+Título longo:	 Projeto
+
+Nome do Campo:	 CodFpj
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da fase do projeto
+Título curto:	 Fase
+Título longo:	 Fase
+
+Nome do Campo:	 CtaFin
+Tipo do Campo:	 Number(007,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZZ.ZZ9
+Descrição:	 Conta financeira reduzida
+Título curto:	 Cta. Fin.
+Título longo:	 Conta Financeira  
+
+Nome do Campo:	 CtaRed
+Tipo do Campo:	 Number(007,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZZ.ZZ9
+Descrição:	 Conta contábil reduzida
+Título curto:	 Cta. Ctb.
+Título longo:	 Conta Contábil
+
+Nome do Campo:	 LctFin
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Indicativo se o movimento foi lançado no plano financeiro
+Título curto:	 Lança PF
+Título longo:	 Lançado Plano Financeiro
+
+Nome do Campo:	 NumLot
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Número do lote contábil
+Título curto:	 Nº Lote
+Título longo:	 Nº Lote Contábil
+
+Nome do Campo:	 NumEme
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Número do documento de entrada do movimento de estoque
+Título curto:	 Nr. Doc.
+Título longo:	 Número Documento
+
+Nome do Campo:	 SeqEme
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZ9
+Descrição:	 Sequência do produto no documento de movimento de estoque
+Título curto:	 Seq.
+Título longo:	 Sequência
+
+Nome do Campo:	 CodFil
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial da nota fiscal de saída
+Título curto:	 Filial NFS
+Título longo:	 Filial NF Saída
+
+Nome do Campo:	 CodSnf
+Tipo do Campo:	 String(003)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[3]
+Descrição:	 Código da série da nota fiscal de saída
+Título curto:	 Série NF
+Título longo:	 Série NF
+
+Nome do Campo:	 NumNfv
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Número da Nota Fiscal de Saída
+Título curto:	 Nº NFS
+Título longo:	 Nº NF Saída
+
+Nome do Campo:	 SeqIpv
+Tipo do Campo:	 Number(003,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9
+Descrição:	 Sequência do item na nota fiscal de saída
+Título curto:	 Seq. NFS
+Título longo:	 Sequência NF Saída
+
+Nome do Campo:	 CodCli
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Código do cliente para os movimentos consignados
+Título curto:	 Cliente
+Título longo:	 Cliente
+
+Nome do Campo:	 FilOcp
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial da Ordem de Compra
+Título curto:	 Filial
+Título longo:	 Filial
+
+Nome do Campo:	 NumOcp
+Tipo do Campo:	 Number(008,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ.ZZZ.ZZ9
+Descrição:	 Número da ordem de compra
+Título curto:	 OC
+Título longo:	 Nº Ordem Compra
+
+Nome do Campo:	 SeqIpo
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Sequência de item da ordem de compra
+Título curto:	 Seq.
+Título longo:	 Sequência
+
+Nome do Campo:	 FilNfc
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial da nota fiscal de entrada
+Título curto:	 Filial NFE
+Título longo:	 Filial NF Entrada
+
+Nome do Campo:	 CodFor
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Código do fornecedor para os movimentos consignados
+Título curto:	 Forn.
+Título longo:	 Fornecedor
+
+Nome do Campo:	 NumNfc
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Número da Nota Fiscal de Entrada
+Título curto:	 Nº NFE
+Título longo:	 Nº NF Entrada
+
+Nome do Campo:	 SnfNfc
+Tipo do Campo:	 String(003)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[3]
+Descrição:	 Código da série da nota fiscal de entrada
+Título curto:	 Série NFE
+Título longo:	 Série NF Entrada
+
+Nome do Campo:	 SeqIpc
+Tipo do Campo:	 Number(003,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9
+Descrição:	 Sequência do item da nota fiscal de entrada
+Título curto:	 Seq. Item NFE
+Título longo:	 Sequência Item NF Entrada
+
+Nome do Campo:	 OriOrp
+Tipo do Campo:	 String(003)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[3]
+Descrição:	 Código da Origem de Produto da OP (Quando Movimento é de uma OP específica)
+Título curto:	 Ori. OP
+Título longo:	 Origem da OP
+
+Nome do Campo:	 UsuDig
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Número do cadastro do usuário digitador
+Título curto:	 Digitador
+Título longo:	 Usuário Digitador
+
+Nome do Campo:	 DatDig
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da digitação do movimento
+Título curto:	 Data
+Título longo:	 Data/Hora
+
+Nome do Campo:	 HorDig
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora da digitação do movimento
+Título curto:	 Hora
+Título longo:	 Hora
+
+Nome do Campo:	 UsuGer
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Usuário responsável pela geração do registro
+Título curto:	 Usuário
+Título longo:	 Usuário
+
+Nome do Campo:	 DatGer
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da geração do registro
+Título curto:	 Data Geração
+Título longo:	 Data/Hora Geração
+
+Nome do Campo:	 HorGer
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora da geração do registro
+Título curto:	 Hora Geração
+Título longo:	 Hora Geração
+
+Nome da Chave primária:	 CP_E210OBS
+Campos da Chave primária:	 CodEmp;CodPro;CodDer;CodDep;DatObs;SeqObs
+
+Nome do Índice:	 E210OBSIndice2
+Tipo do Índice:	 Não unico
+Campo(s):	 CodEmp;DatObs;CodPro;CodDer;CodDep;SeqObs
+
+Total de relacionamentos: 1
+Relacionamento:	 IR_E210OBS_002
+Tabela referenciada:	 E075DER
+Campo(s) na origem:	 CodEmp;CodPro;CodDer
+Campo(s) no destino:	 CodEmp;CodPro;CodDer
+
+
+---------------------
+Tabela: E210OSF
+
+Descrição: Estoques - Saldos físicos mensais - Observações 
+Total de campos: 14 
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 CodFil
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial 
+Título curto:	 Filial
+Título longo:	 Filial
+
+Nome do Campo:	 MesIni
+Tipo do Campo:	 Date
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 MM/YYYY
+Descrição:	 Mês e ano inicial correspondente as informações
+Título curto:	 Mês e Ano Ini.
+Título longo:	 Mês e Ano Ini.
+
+Nome do Campo:	 MesFin
+Tipo do Campo:	 Date
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 MM/YYYY
+Descrição:	 Mês e ano final correspondente as informações
+Título curto:	 Mês e Ano Fin.
+Título longo:	 Mês e Ano Fin.
+
+Nome do Campo:	 DatGer
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data base da geração do registro
+Título curto:	 Data Geração
+Título longo:	 Data Geração 
+
+Nome do Campo:	 UsuGer
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Usuário responsável pela geraçao do registro
+Título curto:	 Usuário Geração
+Título longo:	 Usuário Geração
+
+Nome do Campo:	 HorGer
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora da geração do registro
+Título curto:	 Hora Geração
+Título longo:	 Hora Geração
+
+Nome do Campo:	 OriSel
+Tipo do Campo:	 String(250)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #(40,2)#
+Descrição:	 Origens selecionadas para o processamento
+Título curto:	 Origens Sel.
+Título longo:	 Origens Sel.
+
+Nome do Campo:	 FamSel
+Tipo do Campo:	 String(250)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #(40,2)#
+Descrição:	 Famílias selecionadas para o processamento
+Título curto:	 Famílias Sel.
+Título longo:	 Famílias Sel.
+
+Nome do Campo:	 ProSel
+Tipo do Campo:	 String(250)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #(40,2)#
+Descrição:	 Produtos selecionados para o processamento
+Título curto:	 Produtos Sel.
+Título longo:	 Produtos Sel.
+
+Nome do Campo:	 DerSel
+Tipo do Campo:	 String(250)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #(40,2)#
+Descrição:	 Derivações selecionadas para o processamento
+Título curto:	 Derivações Sel.
+Título longo:	 Derivações Sel.
+
+Nome do Campo:	 DepSel
+Tipo do Campo:	 String(250)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #(40,2)#
+Descrição:	 Depósitos selecionados para o processamento
+Título curto:	 Depósitos Sel.
+Título longo:	 Depósitos Sel.
+
+Nome do Campo:	 QtdSfe
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade de registros inseridos no processamento
+Título curto:	 Qtd. Reg.
+Título longo:	 Quantidade Reg.
+
+Nome do Campo:	 RegUlm
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Indicativo se o sistema deve inserir registros sem movimentações no mês
+Título curto:	 Reg. Ult. Mês
+Título longo:	 Reg. Ult. Mês
+
+Nome da Chave primária:	 CP_E210OSF
+Campos da Chave primária:	 CodEmp;CodFil;MesIni;MesFin
+
+Total de relacionamentos: 2
+Relacionamento:	 IR_E210OSF_000
+Tabela referenciada:	 E070EMP
+Campo(s) na origem:	 CodEmp
+Campo(s) no destino:	 CodEmp
+
+Relacionamento:	 IR_E210OSF_001
+Tabela referenciada:	 E070FIL
+Campo(s) na origem:	 CodEmp;CodFil
+Campo(s) no destino:	 CodEmp;CodFil
+
+
+---------------------
+Tabela: E210PMD
+
+Descrição: Estoques - Preço Médio Depósito 
+Total de campos: 17 
+Nome do Campo:	 IdeUni
+Tipo do Campo:	 String(050)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 A[38]
+Descrição:	 Identificação do mov. preço médio depósito
+Título curto:	 Id. Mov. Pre. Medio
+Título longo:	 Id. Mov. Pre. Medio
+
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 CodDep
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do depósito
+Título curto:	 Depósito
+Título longo:	 Depósito
+
+Nome do Campo:	 CodFam
+Tipo do Campo:	 String(006)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[6]
+Descrição:	 Código da família de produto
+Título curto:	 Família
+Título longo:	 Família
+
+Nome do Campo:	 PrmAnt
+Tipo do Campo:	 Number(021,10)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZ.ZZZ.ZZZ.ZZ9,9[10]
+Descrição:	 Preço Médio Anterior do estoque por depósito.
+Título curto:	 Preço Médio Anterior
+Título longo:	 Preço Médio Anterior
+
+Nome do Campo:	 QtdAnt
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade em estoque total antes do fechamento
+Título curto:	 Qtd. Est. Tot. Ant.
+Título longo:	 Quantidade Estoque Total Anterior
+
+Nome do Campo:	 VlrAnt
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor em estoque total antes do fechamento
+Título curto:	 Vlr. Est. Tot. Ant.
+Título longo:	 Valor Estoque Total Anterior
+
+Nome do Campo:	 PrmEst
+Tipo do Campo:	 Number(021,10)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZ.ZZZ.ZZZ.ZZ9,9[10]
+Descrição:	 Preço Médio do estoque por depósito.
+Título curto:	 Preço Méd. Est. Dep.
+Título longo:	 Preço Méd. Est. Dep.
+
+Nome do Campo:	 QtdEst
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade em estoque total após o fechamento
+Título curto:	 Qtd. Est. Tot
+Título longo:	 Quantidade Estoque Total
+
+Nome do Campo:	 VlrEst
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor em estoque total após o fechamento
+Título curto:	 Vlr. Est. Tot
+Título longo:	 Valor Estoque Total
+
+Nome do Campo:	 DatFec
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data base para o fechamento do estoque
+Título curto:	 Data Fechamento
+Título longo:	 Data Fechamento
+
+Nome do Campo:	 UsuGer
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Usuário responsável pela geração do registro
+Título curto:	 Usuário Geração
+Título longo:	 Usuário Geração
+
+Nome do Campo:	 DatGer
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da geração do registro
+Título curto:	 Data Geração
+Título longo:	 Data Geração
+
+Nome do Campo:	 HorGer
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora da geração do registro
+Título curto:	 Hora Geração
+Título longo:	 Hora Geração
+
+Nome do Campo:	 UsuAtu
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Usuário responsável pela atualização do registro
+Título curto:	 Usuário Atualização
+Título longo:	 Usuário Atualização
+
+Nome do Campo:	 DatAtu
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da atualização do registro
+Título curto:	 Data Atualização
+Título longo:	 Data Atualização
+
+Nome do Campo:	 HorAtu
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora da atualização do registro
+Título curto:	 Hora Atualização
+Título longo:	 Hora Atualização
+
+Nome da Chave primária:	 CP_E210PMD
+Campos da Chave primária:	 IdeUni
+
+Nome do Índice:	 E210PMDindice1
+Tipo do Índice:	 Unico
+Campo(s):	 CodEmp;CodDep;CodFam
+
+Total de relacionamentos: 0
+
+---------------------
+Tabela: E210PNU
+
+Descrição: Estoques - Produtos Numerados 
+Total de campos: 17 
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 CodPro
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Código do produto em estoque
+Título curto:	 Produto
+Título longo:	 Produto
+
+Nome do Campo:	 CodDer
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Código da derivação do produto em estoque
+Título curto:	 Deriv.
+Título longo:	 Derivação
+
+Nome do Campo:	 CodDep
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do depósito 
+Título curto:	 Depós.
+Título longo:	 Depósito
+
+Nome do Campo:	 NumSep
+Tipo do Campo:	 String(050)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[50]
+Descrição:	 Número de série do produto
+Título curto:	 Nº Série
+Título longo:	 Número de Série
+
+Nome do Campo:	 NumDoc
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Número de documento base da numeração
+Título curto:	 Doc.
+Título longo:	 Documento
+
+Nome do Campo:	 FilPed
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial do pedido
+Título curto:	 Filial Ped.
+Título longo:	 Filial Pedido
+
+Nome do Campo:	 NumPed
+Tipo do Campo:	 Number(008,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ.ZZZ.ZZ9
+Descrição:	 Número do pedido que gerou o número de série
+Título curto:	 Pedido
+Título longo:	 Pedido/Item
+
+Nome do Campo:	 SeqIpd
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Sequência do item no pedido
+Título curto:	 Seq. Item Ped.
+Título longo:	 Sequência Item Pedido
+
+Nome do Campo:	 SitPnu
+Tipo do Campo:	 Number(001,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 9[1]
+Descrição:	 Situação do registro de numeração
+Título curto:	 Sit.
+Título longo:	 Situação
+
+Nome do Campo:	 UsuGer
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Usuário responsável pela geração do registro
+Título curto:	 Usuário Geração
+Título longo:	 Usuário Geração
+
+Nome do Campo:	 DatGer
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da geração do registro
+Título curto:	 Data Geração
+Título longo:	 Data Geração
+
+Nome do Campo:	 HorGer
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora da geração do registro
+Título curto:	 Hora Geração
+Título longo:	 Hora Geração
+
+Nome do Campo:	 ObsPnu
+Tipo do Campo:	 String(250)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #(40,2)#
+Descrição:	 Observação
+Título curto:	 Obs.
+Título longo:	 Observação
+
+Nome do Campo:	 DatNum
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da confirmação da numeração da série
+Título curto:	 Data Conf. Numer.
+Título longo:	 Data Confirmação Numeração
+
+Nome do Campo:	 OriOrp
+Tipo do Campo:	 String(003)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[3]
+Descrição:	 Código da Origem de Produto da OP (Quando Movimento é de uma OP específica)
+Título curto:	 Ori. OP
+Título longo:	 Origem da OP
+
+Nome do Campo:	 UsuLei
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Usuário responsável pela leitura do registro
+Título curto:	 Usuário Leitura
+Título longo:	 Usuário Leitura
+
+Nome da Chave primária:	 CP_E210PNU
+Campos da Chave primária:	 CodEmp;CodPro;CodDer;CodDep;NumSep
+
+Total de relacionamentos: 0
+
+---------------------
+Tabela: E210RAT
+
+Descrição: Estoques - Rateios dos Movimentos 
+Total de campos: 26 
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 CodPro
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Código do produto movimentado
+Título curto:	 Produto
+Título longo:	 Produto
+
+Nome do Campo:	 CodDer
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Código da derivação do produto movimentado
+Título curto:	 Deriv.
+Título longo:	 Derivação
+
+Nome do Campo:	 CodDep
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do depósito movimentado
+Título curto:	 Depós.
+Título longo:	 Depósito
+
+Nome do Campo:	 DatMov
+Tipo do Campo:	 Date
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da movimentação do estoque
+Título curto:	 Data Mov.
+Título longo:	 Data Movimento
+
+Nome do Campo:	 SeqMov
+Tipo do Campo:	 Number(006,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZ9
+Descrição:	 Sequência de movimento na data de movimentação
+Título curto:	 Seq. Mov.
+Título longo:	 Sequência Movimento
+
+Nome do Campo:	 SeqRat
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Sequência do rateio do movimento
+Título curto:	 Seq. Rat.
+Título longo:	 Sequência Rateio
+
+Nome do Campo:	 CodTns
+Tipo do Campo:	 String(005)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[5]
+Descrição:	 Código da transação
+Título curto:	 Trans.
+Título longo:	 Transação
+
+Nome do Campo:	 CodFil
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial
+Título curto:	 Filial
+Título longo:	 Filial
+
+Nome do Campo:	 MesAno
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 MM/YYYY
+Descrição:	 Mês e ano de competência
+Título curto:	 Compet.
+Título longo:	 Mês/Ano Competência
+
+Nome do Campo:	 CriRat
+Tipo do Campo:	 Number(001,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 9[1]
+Descrição:	 Critério utilizado para rateio
+Título curto:	 Crit. Rat.
+Título longo:	 Critério Rateio
+
+Nome do Campo:	 SomSub
+Tipo do Campo:	 Number(001,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 9[1]
+Descrição:	 Somar ou subtrair o valor no plano financeiro/centro de custos
+Título curto:	 Soma/Sub.
+Título longo:	 Somar ou Subtrair
+
+Nome do Campo:	 NumPrj
+Tipo do Campo:	 Number(008,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ.ZZZ.ZZ9
+Descrição:	 Número do projeto
+Título curto:	 Projeto
+Título longo:	 Projeto
+
+Nome do Campo:	 CodFpj
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da fase do projeto
+Título curto:	 Fase
+Título longo:	 Fase
+
+Nome do Campo:	 CtaFin
+Tipo do Campo:	 Number(007,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZZ.ZZ9
+Descrição:	 Conta financeira reduzida
+Título curto:	 Cta. Fin.
+Título longo:	 Conta Financeira
+
+Nome do Campo:	 CtaRed
+Tipo do Campo:	 Number(007,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZZ.ZZ9
+Descrição:	 Conta contábil reduzida
+Título curto:	 Cta. Ctb.
+Título longo:	 Conta Contábil
+
+Nome do Campo:	 PerCta
+Tipo do Campo:	 Number(007,4)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZ9,9999
+Descrição:	 Percentual rateado para a conta
+Título curto:	 % Rat. Cta.
+Título longo:	 % Rateio Conta
+
+Nome do Campo:	 VlrCta
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor rateado para a conta
+Título curto:	 Vlr. Rat. Cta.
+Título longo:	 Valor Rateio Conta
+
+Nome do Campo:	 CodCcu
+Tipo do Campo:	 String(009)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[9]
+Descrição:	 Código do centro de custos
+Título curto:	 C. Custos
+Título longo:	 Centro Custos
+
+Nome do Campo:	 PerRat
+Tipo do Campo:	 Number(007,4)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZ9,9999
+Descrição:	 Percentual rateado para o centro de custos
+Título curto:	 % Rat. CC
+Título longo:	 % Rateio Centro Custos
+
+Nome do Campo:	 VlrRat
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor rateado para o centro de custos
+Título curto:	 Vlr. Rat. CC
+Título longo:	 Valor Rateio Centro Custos
+
+Nome do Campo:	 ObsRat
+Tipo do Campo:	 String(120)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 A[120]
+Descrição:	 Observação do rateio
+Título curto:	 Obs.
+Título longo:	 Observação
+
+Nome do Campo:	 UsuGer
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Usuário responsável pela geração do registro
+Título curto:	 Usuário Geração
+Título longo:	 Usuário Geração
+
+Nome do Campo:	 DatGer
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da geração do registro
+Título curto:	 Data Geração
+Título longo:	 Data Geração
+
+Nome do Campo:	 HorGer
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora da geração do registro
+Título curto:	 Hora Geração
+Título longo:	 Hora Geração
+
+Nome do Campo:	 TipOri
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Origem do Rateio
+Título curto:	 Ori. Rateio
+Título longo:	 Origem Rateio
+
+Nome da Chave primária:	 CP_E210RAT
+Campos da Chave primária:	 CodEmp;CodPro;CodDer;CodDep;DatMov;SeqMov;SeqRat
+
+Nome do Índice:	 E210RATIndice2
+Tipo do Índice:	 Não unico
+Campo(s):	 CodEmp;CodFil;MesAno;NumPrj;CodFpj;CtaFin
+
+Total de relacionamentos: 1
+Relacionamento:	 IR_E210RAT_005
+Tabela referenciada:	 E210MVP
+Campo(s) na origem:	 CodEmp;CodPro;CodDer;CodDep;DatMov;SeqMov
+Campo(s) no destino:	 CodEmp;CodPro;CodDer;CodDep;DatMov;SeqMov
+
+
+---------------------
+Tabela: E210RES
+
+Descrição: Estoques - Produtos Reservados 
+Total de campos: 12 
+Nome do Campo:	 IdeUni
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Identificador de registro
+Título curto:	 Ident. Registro
+Título longo:	 Identificador Registro
+
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 CodPro
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Código do produto
+Título curto:	 Produto
+Título longo:	 Produto
+
+Nome do Campo:	 CodDer
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Código da derivação
+Título curto:	 Deriv.
+Título longo:	 Derivação
+
+Nome do Campo:	 CodDep
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do depósito movimentado
+Título curto:	 Depós.
+Título longo:	 Depósito
+
+Nome do Campo:	 QtdRes
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade reservada
+Título curto:	 Qtd. Res.
+Título longo:	 Quantidade Reservada
+
+Nome do Campo:	 IdeDre
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Identificação do registro da tabela de documentos de reserva
+Título curto:	 Ide. Doc. Reserva
+Título longo:	 Identificação tabela documentos de reserva
+
+Nome do Campo:	 UsuGer
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Usuário responsável pela geração do registro
+Título curto:	 Usuário Geração
+Título longo:	 Usuário de Geração
+
+Nome do Campo:	 DatGer
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da geração do registro
+Título curto:	 Data Geração
+Título longo:	 Data da Geração
+
+Nome do Campo:	 HorGer
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora da geração do registro
+Título curto:	 Hora Geração
+Título longo:	 Hora da Geração
+
+Nome do Campo:	 NumSep
+Tipo do Campo:	 String(050)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[50]
+Descrição:	 Número de série do produto
+Título curto:	 Nº Série
+Título longo:	 Número de Série
+
+Nome do Campo:	 CodLot
+Tipo do Campo:	 String(050)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[50]
+Descrição:	 Código do lote de fabricação do produto
+Título curto:	 Lote Fab.
+Título longo:	 Lote Fabricação
+
+Nome da Chave primária:	 CP_E210RES
+Campos da Chave primária:	 IdeUni
+
+Nome do Índice:	 E210RESIndice1
+Tipo do Índice:	 Não unico
+Campo(s):	 IdeDre
+
+Nome do Índice:	 E210RESIndice2
+Tipo do Índice:	 Não unico
+Campo(s):	 CodEmp;CodPro;CodDer;CodDep
+
+Total de relacionamentos: 2
+Relacionamento:	 IR_E210RES_004
+Tabela referenciada:	 E210EST
+Campo(s) na origem:	 CodEmp;CodPro;CodDer;CodDep
+Campo(s) no destino:	 CodEmp;CodPro;CodDer;CodDep
+
+Relacionamento:	 IR_E210RES_006
+Tabela referenciada:	 E210DRE
+Campo(s) na origem:	 IdeDre
+Campo(s) no destino:	 IdeUni
+
+
+---------------------
+Tabela: E210SCM
+
+Descrição: Estoques - Saldos Consignados Mensais 
+Total de campos: 12 
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 CodFil
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial 
+Título curto:	 Filial
+Título longo:	 Filial
+
+Nome do Campo:	 CodPro
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Código do produto 
+Título curto:	 Produto
+Título longo:	 Produto
+
+Nome do Campo:	 CodDer
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Código da derivação do produto
+Título curto:	 Derivação
+Título longo:	 Derivação
+
+Nome do Campo:	 CodDep
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do depósito 
+Título curto:	 Depós.
+Título longo:	 Depósito
+
+Nome do Campo:	 MesAno
+Tipo do Campo:	 Date
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 MM/YYYY
+Descrição:	 Mês e ano correspondente as informações
+Título curto:	 Mês e Ano 
+Título longo:	 Mês e Ano 
+
+Nome do Campo:	 CodCli
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Código do cliente com o produto consignado
+Título curto:	 Cliente
+Título longo:	 Cliente
+
+Nome do Campo:	 CodFor
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Código do fornecedor do produto consignado
+Título curto:	 Forn.
+Título longo:	 Fornecedor
+
+Nome do Campo:	 QtdCfo
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade consignada a fornecedor
+Título curto:	 Qtd. Consig. Fornec.
+Título longo:	 Qtd. Consignada a Fornecedor
+
+Nome do Campo:	 VlrCfo
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor total consignado a fornecedor
+Título curto:	 Vlr. Consig. Fornec.
+Título longo:	 Valor Consignado a Fornecedor
+
+Nome do Campo:	 QtdCcl
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade consignada a cliente
+Título curto:	 Qtd. Consig. Cliente
+Título longo:	 Qtd. Consignada a Cliente
+
+Nome do Campo:	 VlrCcl
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor total consignado a cliente
+Título curto:	 Vlr. Consig. Cliente
+Título longo:	 Valor Consignado a Cliente
+
+Nome da Chave primária:	 CP_E210SCM
+Campos da Chave primária:	 CodEmp;CodFil;CodPro;CodDer;CodDep;MesAno;CodCli;CodFor
+
+Nome do Índice:	 E210SCMIndice1
+Tipo do Índice:	 Não unico
+Campo(s):	 CodEmp;CodDep
+
+Nome do Índice:	 E210SCMIndice2
+Tipo do Índice:	 Não unico
+Campo(s):	 CodEmp;CodPro;CodDer
+
+Total de relacionamentos: 5
+Relacionamento:	 IR_E210SCM_000
+Tabela referenciada:	 E070EMP
+Campo(s) na origem:	 CodEmp
+Campo(s) no destino:	 CodEmp
+
+Relacionamento:	 IR_E210SCM_001
+Tabela referenciada:	 E070FIL
+Campo(s) na origem:	 CodEmp;CodFil
+Campo(s) no destino:	 CodEmp;CodFil
+
+Relacionamento:	 IR_E210SCM_002
+Tabela referenciada:	 E075PRO
+Campo(s) na origem:	 CodEmp;CodPro
+Campo(s) no destino:	 CodEmp;CodPro
+
+Relacionamento:	 IR_E210SCM_003
+Tabela referenciada:	 E075DER
+Campo(s) na origem:	 CodEmp;CodPro;CodDer
+Campo(s) no destino:	 CodEmp;CodPro;CodDer
+
+Relacionamento:	 IR_E210SCM_004
+Tabela referenciada:	 E205DEP
+Campo(s) na origem:	 CodEmp;CodDep
+Campo(s) no destino:	 CodEmp;CodDep
+
+
+---------------------
+Tabela: E210SFC
+
+Descrição: Estoques - Saldos Consignados Mensais por Depósito 
+Total de campos: 10 
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 CodPro
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Código do produto consignado
+Título curto:	 Produto
+Título longo:	 Produto
+
+Nome do Campo:	 CodDer
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Código da derivação do produto consignado
+Título curto:	 Deriv.
+Título longo:	 Derivação
+
+Nome do Campo:	 CodDep
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do depósito do produto consignado
+Título curto:	 Depós.
+Título longo:	 Depósito
+
+Nome do Campo:	 MesAno
+Tipo do Campo:	 Date
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 MM/YYYY
+Descrição:	 Mês e ano correspondente as informações
+Título curto:	 Mês e Ano 
+Título longo:	 Mês e Ano 
+
+Nome do Campo:	 CodCli
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Código do cliente com o produto consignado
+Título curto:	 Cliente
+Título longo:	 Cliente
+
+Nome do Campo:	 CodFor
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Código do fornecedor do produto consignado
+Título curto:	 Forn.
+Título longo:	 Fornecedor
+
+Nome do Campo:	 FilDep
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial que o depósito pertence
+Título curto:	 Filial Dep.
+Título longo:	 Filial Depósito
+
+Nome do Campo:	 QtdCsg
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade consignado com o cliente ou do fornecedor
+Título curto:	 Qtd. Consig.
+Título longo:	 Quantidade Consignada
+
+Nome do Campo:	 VlrCsg
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor consignado com o cliente ou do fornecedor
+Título curto:	 Vlr. Csg.
+Título longo:	 Valor Consigando
+
+Nome da Chave primária:	 CP_E210SFC
+Campos da Chave primária:	 CodEmp;CodPro;CodDer;CodDep;CodCli;CodFor;MesAno
+
+Nome do Índice:	 E210SFCIndice1
+Tipo do Índice:	 Não unico
+Campo(s):	 CodEmp;CodDep
+
+Total de relacionamentos: 3
+Relacionamento:	 IR_E210SFC_000
+Tabela referenciada:	 E070EMP
+Campo(s) na origem:	 CodEmp
+Campo(s) no destino:	 CodEmp
+
+Relacionamento:	 IR_E210SFC_001
+Tabela referenciada:	 E075PRO
+Campo(s) na origem:	 CodEmp;CodPro
+Campo(s) no destino:	 CodEmp;CodPro
+
+Relacionamento:	 IR_E210SFC_003
+Tabela referenciada:	 E205DEP
+Campo(s) na origem:	 CodEmp;CodDep
+Campo(s) no destino:	 CodEmp;CodDep
+
+
+---------------------
+Tabela: E210SFE
+
+Descrição: Estoques - Saldos Físicos Mensais 
+Total de campos: 29 
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 CodFil
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial 
+Título curto:	 Filial
+Título longo:	 Filial
+
+Nome do Campo:	 CodPro
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Código do produto 
+Título curto:	 Produto
+Título longo:	 Produto
+
+Nome do Campo:	 CodDer
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Código da derivação do produto
+Título curto:	 Derivação
+Título longo:	 Derivação
+
+Nome do Campo:	 CodDep
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do depósito 
+Título curto:	 Depós.
+Título longo:	 Depósito
+
+Nome do Campo:	 MesAno
+Tipo do Campo:	 Date
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 MM/YYYY
+Descrição:	 Mês e ano correspondente as informações
+Título curto:	 Mês e Ano 
+Título longo:	 Mês e Ano 
+
+Nome do Campo:	 QtdEst
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade física total do estoque no depósito
+Título curto:	 Qtd. Est.
+Título longo:	 Quantidade em Estoque
+
+Nome do Campo:	 VlrEst
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor total em estoque no depósito
+Título curto:	 Vlr. Est. Tot.
+Título longo:	 Valor Estoque Total
+
+Nome do Campo:	 QtdCfo
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade consignada a fornecedor
+Título curto:	 Qtd. Consig. Fornec.
+Título longo:	 Qtd. Consignada a Fornecedor
+
+Nome do Campo:	 VlrCfo
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor total consignado a fornecedor
+Título curto:	 Vlr. Consig. Fornec.
+Título longo:	 Valor Consignado a Fornecedor
+
+Nome do Campo:	 QtdCcl
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade consignada a cliente
+Título curto:	 Qtd. Consig. Cliente
+Título longo:	 Qtd. Consignada a Cliente
+
+Nome do Campo:	 VlrCcl
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor total consignado a cliente
+Título curto:	 Vlr. Consig. Cliente
+Título longo:	 Valor Consignado a Cliente
+
+Nome do Campo:	 PreMed
+Tipo do Campo:	 Number(021,10)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZ.ZZZ.ZZZ.ZZ9,9[10]
+Descrição:	 Preço médio
+Título curto:	 Preço Médio
+Título longo:	 Preço Médio
+
+Nome do Campo:	 DatGer
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data base da geração do registro
+Título curto:	 Data Geração
+Título longo:	 Data Geração 
+
+Nome do Campo:	 UsuGer
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Usuário responsável pela geraçao do registro
+Título curto:	 Usuário Geração
+Título longo:	 Usuário Geração
+
+Nome do Campo:	 HorGer
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora da geração do registro
+Título curto:	 Hora Geração
+Título longo:	 Hora Geração
+
+Nome do Campo:	 UltMov
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data último movimento
+Título curto:	 Dat. Ult. Mov.
+Título longo:	 Dat. Ult. Mov.
+
+Nome do Campo:	 UltSeq
+Tipo do Campo:	 Number(006,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZ9
+Descrição:	 Sequência do último movimento na data de movimentação
+Título curto:	 Seq. Últ. Mov.
+Título longo:	 Seq. Últ. Mov.
+
+Nome do Campo:	 SalMes
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Este saldo corresponde ao mês atual ou foi buscado de outro mês?
+Título curto:	 Saldo do Mês?
+Título longo:	 Saldo do Mês?
+
+Nome do Campo:	 QtdEla
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade física total do estoque em elaboração no depósito
+Título curto:	 Qtd. Elab.
+Título longo:	 Quantidade em Elaboração
+
+Nome do Campo:	 VlrEla
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor total do estoque em elaboração no depósito
+Título curto:	 Vlr. Elab. Tot.
+Título longo:	 Valor em Elaboração Total
+
+Nome do Campo:	 PrmIcm
+Tipo do Campo:	 Number(015,6)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[6]
+Descrição:	 Preço Médio do valor total de ICMS
+Título curto:	 Preço Méd. ICMS
+Título longo:	 Preço Médio ICMS
+
+Nome do Campo:	 VlrIcm
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor de ICMS
+Título curto:	 Vlr. ICMS
+Título longo:	 Valor ICMS
+
+Nome do Campo:	 IcmAcf
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor total de ICMS acumulado para a filial
+Título curto:	 Vlr. ICMS da Filial
+Título longo:	 Vlr. ICMS da Filial
+
+Nome do Campo:	 QtdPrp
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade física total do estoque próprio no depósito
+Título curto:	 Qtd. Est. Próprio
+Título longo:	 Quantidade em Estoque Próprio
+
+Nome do Campo:	 VlrPrp
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor total em estoque próprio no depósito
+Título curto:	 Vlr. Est. Próprio
+Título longo:	 Valor Estoque Próprio
+
+Nome do Campo:	 USU_vlricm
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 USU_vlricm
+Título curto:	 USU_vlricm
+Título longo:	 USU_vlricm
+
+Nome do Campo:	 USU_icmacf
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 USU_icmacf
+Título curto:	 USU_icmacf
+Título longo:	 USU_icmacf
+
+Nome do Campo:	 USU_prmicm
+Tipo do Campo:	 Number(015,6)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[6]
+Descrição:	 USU_prmicm
+Título curto:	 USU_prmicm
+Título longo:	 USU_prmicm
+
+Nome da Chave primária:	 CP_E210SFE
+Campos da Chave primária:	 CodEmp;CodFil;CodPro;CodDer;CodDep;MesAno
+
+Nome do Índice:	 E210SFEIndice1
+Tipo do Índice:	 Não unico
+Campo(s):	 CodEmp;CodPro;CodDer
+
+Nome do Índice:	 E210SFEIndice2
+Tipo do Índice:	 Não unico
+Campo(s):	 CodEmp;CodDep
+
+Total de relacionamentos: 5
+Relacionamento:	 IR_E210SFE_000
+Tabela referenciada:	 E070EMP
+Campo(s) na origem:	 CodEmp
+Campo(s) no destino:	 CodEmp
+
+Relacionamento:	 IR_E210SFE_001
+Tabela referenciada:	 E070FIL
+Campo(s) na origem:	 CodEmp;CodFil
+Campo(s) no destino:	 CodEmp;CodFil
+
+Relacionamento:	 IR_E210SFE_002
+Tabela referenciada:	 E075PRO
+Campo(s) na origem:	 CodEmp;CodPro
+Campo(s) no destino:	 CodEmp;CodPro
+
+Relacionamento:	 IR_E210SFE_003
+Tabela referenciada:	 E075DER
+Campo(s) na origem:	 CodEmp;CodPro;CodDer
+Campo(s) no destino:	 CodEmp;CodPro;CodDer
+
+Relacionamento:	 IR_E210SFE_004
+Tabela referenciada:	 E205DEP
+Campo(s) na origem:	 CodEmp;CodDep
+Campo(s) no destino:	 CodEmp;CodDep
+
+
+---------------------
+Tabela: E210SLB
+
+Descrição: Estoques - Saldos da Limpeza de Base 
+Total de campos: 20 
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 FilDep
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial que o depósito pertence
+Título curto:	 Filial Dep.
+Título longo:	 Filial Depósito
+
+Nome do Campo:	 CodPro
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Código do produto em estoque
+Título curto:	 Produto
+Título longo:	 Produto
+
+Nome do Campo:	 CodDer
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Código da derivação do produto em estoque
+Título curto:	 Deriv.
+Título longo:	 Derivação
+
+Nome do Campo:	 CodDep
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do depósito 
+Título curto:	 Depós.
+Título longo:	 Depósito
+
+Nome do Campo:	 CodLot
+Tipo do Campo:	 String(050)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[50]
+Descrição:	 Código do Lote de Fabricação para estocagem
+Título curto:	 Lote Fab.
+Título longo:	 Lote Fabricação
+
+Nome do Campo:	 QtdEst
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade física total do estoque no depósito na data da limpeza de base
+Título curto:	 Qtd. Est.
+Título longo:	 Quantidade em Estoque
+
+Nome do Campo:	 VlrEst
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor em estoque total na data da limpeza de base
+Título curto:	 Vlr. Est. Tot.
+Título longo:	 Valor Estoque Total
+
+Nome do Campo:	 QtdBlo
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade de estoque bloqueado na data da limpeza de base
+Título curto:	 Qtd. Bloq.
+Título longo:	 Quantidade Bloqueado Manual
+
+Nome do Campo:	 QtdRes
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade do estoque reservado na data da limpeza de base
+Título curto:	 Qtd. Res.
+Título longo:	 Quantidade Reservada
+
+Nome do Campo:	 QtdCfo
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade consignada de fornecedores na data da limpeza de base
+Título curto:	 Qtd. Forn.
+Título longo:	 Quantidade Consignada Fornecedor
+
+Nome do Campo:	 QtdCcl
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade consignada para clientes  na data da limpeza de base
+Título curto:	 Qtd. Cons. Cli.
+Título longo:	 Quantidade Consignada Cliente
+
+Nome do Campo:	 PrmEst
+Tipo do Campo:	 Number(021,10)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZ.ZZZ.ZZZ.ZZ9,9[10]
+Descrição:	 Preço Médio do estoque na data da limpeza de base
+Título curto:	 Preço Méd. Est.
+Título longo:	 Preço Médio Estoque
+
+Nome do Campo:	 DatLbd
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da limpeza de base
+Título curto:	 Data Limpeza
+Título longo:	 Data Limpeza
+
+Nome do Campo:	 DatGer
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da geração da Limpeza de Base
+Título curto:	 Data Geração da Limpeza
+Título longo:	 Data Geração da Limpeza
+
+Nome do Campo:	 HorGer
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora da geração da Limpeza de base
+Título curto:	 Hora Geração da Limpeza
+Título longo:	 Hora Geração da Limpeza
+
+Nome do Campo:	 UsuGer
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Número do cadastro do usuário que executou a limpeza de base
+Título curto:	 Usuário Gerador Limpeza
+Título longo:	 Usuário Gerador Limpeza
+
+Nome do Campo:	 VlrIcm
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor de ICMS
+Título curto:	 Vlr. ICMS
+Título longo:	 Valor ICMS
+
+Nome do Campo:	 PrmIcm
+Tipo do Campo:	 Number(015,6)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[6]
+Descrição:	 Preço Médio do valor total de ICMS
+Título curto:	 Preço Méd. ICMS
+Título longo:	 Preço Médio ICMS
+
+Nome do Campo:	 IcmAcf
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor total de ICMS acumulado para a filial
+Título curto:	 Vlr. ICMS da Filial
+Título longo:	 Vlr. ICMS da Filial
+
+Nome da Chave primária:	 CP_E210SLB
+Campos da Chave primária:	 CodEmp;FilDep;CodPro;CodDer;CodDep;CodLot
+
+Nome do Índice:	 E210SLBIndice1
+Tipo do Índice:	 Não unico
+Campo(s):	 CodEmp;CodPro;CodDer;CodDep
+
+Total de relacionamentos: 1
+Relacionamento:	 IR_E210SLB_004
+Tabela referenciada:	 E210EST
+Campo(s) na origem:	 CodEmp;CodPro;CodDer;CodDep
+Campo(s) no destino:	 CodEmp;CodPro;CodDer;CodDep
+
+
+---------------------
+Tabela: E210TRA
+
+Descrição: Estoques - Valorização Transferências 
+Total de campos: 27 
+Nome do Campo:	 IdeUni
+Tipo do Campo:	 String(050)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 A[38]
+Descrição:	 Identificador único alfanumérico
+Título curto:	 Ide. Uni. Alfa
+Título longo:	 Identificador único alfanumérico
+
+Nome do Campo:	 CodEmp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 CodPro
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Código do produto transferido
+Título curto:	 Produto
+Título longo:	 Produto
+
+Nome do Campo:	 CodDer
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Código da Derivação do produto transferido
+Título curto:	 Deriv.
+Título longo:	 Derivação
+
+Nome do Campo:	 CodDep
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[10]
+Descrição:	 Código do depósito transferido
+Título curto:	 Depós.
+Título longo:	 Depósito
+
+Nome do Campo:	 DatMov
+Tipo do Campo:	 Date
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da movimentação do estoque
+Título curto:	 Data Mov.
+Título longo:	 Data Movimento
+
+Nome do Campo:	 SeqMov
+Tipo do Campo:	 Number(006,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZ9
+Descrição:	 Sequência de movimento na data de movimentação
+Título curto:	 Seq. Mov.
+Título longo:	 Sequência Movimento
+
+Nome do Campo:	 FilFec
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial
+Título curto:	 Filial
+Título longo:	 Filial
+
+Nome do Campo:	 EmpNfv
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Código da empresa da nota fiscal de saída
+Título curto:	 Empresa da Nfs
+Título longo:	 Empresa da Nfs
+
+Nome do Campo:	 FilNfv
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZZ9
+Descrição:	 Código da filial da nota fiscal de saída
+Título curto:	 Filial da Nfs
+Título longo:	 Filial da Nfs
+
+Nome do Campo:	 SnfNfv
+Tipo do Campo:	 String(003)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[3]
+Descrição:	 Código da série da nota fiscal de saída
+Título curto:	 Série Nfs
+Título longo:	 Série Nfs
+
+Nome do Campo:	 NumNfv
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Número da nota fiscal de saída
+Título curto:	 Nr. NF
+Título longo:	 Número Nfs
+
+Nome do Campo:	 SeqIpv
+Tipo do Campo:	 Number(003,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9
+Descrição:	 Sequência do item na nota fiscal de saída
+Título curto:	 Seq. Item da Nfs
+Título longo:	 Seq. Item da Nfs
+
+Nome do Campo:	 PrmEst
+Tipo do Campo:	 Number(021,10)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 #-#ZZ.ZZZ.ZZZ.ZZ9,9[10]
+Descrição:	 Preço Médio do estoque total
+Título curto:	 Preço Médio. Est.
+Título longo:	 Preço Médio Estoque
+
+Nome do Campo:	 ChvFec
+Tipo do Campo:	 String(050)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 A[50]
+Descrição:	 Chave Única do fechamento de estoques
+Título curto:	 Chv. fec.
+Título longo:	 Chave do fechamento
+
+Nome do Campo:	 DatIni
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Período inicial de validade para movimentações dos estoques
+Título curto:	 Per. Ini. Est.
+Título longo:	 Período Inicial Estoques
+
+Nome do Campo:	 DatFin
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Período final de validade para movimentações dos estoques
+Título curto:	 Per. Fim Est.
+Título longo:	 Período Final Estoques
+
+Nome do Campo:	 CodLig
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Código da ligação do movimento
+Título curto:	 Cód. Lig.
+Título longo:	 Código Ligação
+
+Nome do Campo:	 FecAtu
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Fechamento ou Atualização de Estoques
+Título curto:	 Fec./Atu.
+Título longo:	 Fechamento/Atualização
+
+Nome do Campo:	 DatGer
+Tipo do Campo:	 Date
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data de geração do registro
+Título curto:	 Data Fecham.
+Título longo:	 Data da Geração do registro
+
+Nome do Campo:	 CodFor
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9
+Descrição:	 Código do fornecedor Nota fiscal de Compra
+Título curto:	 Forn.
+Título longo:	 Fornecedor
+
+Nome do Campo:	 QtdMov
+Tipo do Campo:	 Number(014,5)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZZ.ZZ9,9[5]
+Descrição:	 Quantidade do movimento 
+Título curto:	 Qtd. Mov.
+Título longo:	 Quantidade Movimento
+
+Nome do Campo:	 VlrMov
+Tipo do Campo:	 Number(015,2)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z.ZZZ.ZZZ.ZZZ.ZZ9,99
+Descrição:	 Valor do movimento
+Título curto:	 Vlr. Mov.
+Título longo:	 Valor Movimento
+
+Nome do Campo:	 CodTns
+Tipo do Campo:	 String(005)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[5]
+Descrição:	 Código da transação
+Título curto:	 Trans.
+Título longo:	 Transação
+
+Nome do Campo:	 EstEos
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Entrada ou saída de estoque
+Título curto:	 Ent./Saída
+Título longo:	 Entrada ou Saída
+
+Nome do Campo:	 NorCus
+Tipo do Campo:	 String(006)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Fechamento Normal ou Via Custos
+Título curto:	 Normal/Custos
+Título longo:	 Normal ou Custos
+
+Nome do Campo:	 HorGer
+Tipo do Campo:	 Number(005,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 hh:mm
+Descrição:	 Hora da Geração do Registro
+Título curto:	 Hora
+Título longo:	 Hora Geração do Registro
+
+Nome da Chave primária:	 CP_E210TRA
+Campos da Chave primária:	 IdeUni
+
+Nome do Índice:	 E210TRAINDICE01
+Tipo do Índice:	 Não unico
+Campo(s):	 CodEmp;CodPro;CodDer;CodDep;DatMov;SeqMov
+
+Nome do Índice:	 E210TRAINDICE02
+Tipo do Índice:	 Não unico
+Campo(s):	 EmpNfv;FilNfv;SnfNfv;NumNfv;SeqIpv
+
+Total de relacionamentos: 0
