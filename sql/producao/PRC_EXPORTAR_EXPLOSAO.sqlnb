@@ -1,0 +1,340 @@
+cells:
+  - kind: 2
+    value: "CREATE OR REPLACE PROCEDURE PRC_EXPORTAR_EXPLOSAO_CSV\r
+
+      IS\r
+
+      \    v_arquivo UTL_FILE.FILE_TYPE;\r
+
+      \    v_aberto  BOOLEAN := FALSE;\r
+
+      \r
+
+      \    CURSOR c_dados IS\r
+
+      \        WITH componentes AS (\r
+
+      \            SELECT a.usu_codemp,\r
+
+      \                   a.usu_codpro,\r
+
+      \                   a.usu_codder,\r
+
+      \                   a.usu_tipmer,\r
+
+      \                   a.usu_codcmp,\r
+
+      \                   a.usu_despro,\r
+
+      \                   d.tippro,\r
+
+      \                   a.usu_codoricmp,\r
+
+      \                   a.usu_unimed,\r
+
+      \                   t.precus,\r
+
+      \                   SUM(a.usu_qtduti) AS usu_qtduti\r
+
+      \              FROM usu_texplosao134 a\r
+
+      \              JOIN e075pro d\r
+
+      \                ON d.codemp = a.usu_codemp\r
+
+      \               AND d.codpro = a.usu_codcmp\r
+
+      \              JOIN e075der t\r
+
+      \                ON t.codemp = d.codemp\r
+
+      \               AND t.codpro = d.codpro\r
+
+      \               AND t.codder = a.usu_coddercmp\r
+
+      \             /*WHERE a.usu_codpro = 'DCF6000'\r
+
+      \               AND a.usu_codder = '2170'*/\r
+
+      \             GROUP BY a.usu_codemp,\r
+
+      \                      a.usu_codpro,\r
+
+      \                      a.usu_codder,\r
+
+      \                      a.usu_tipmer,\r
+
+      \                      a.usu_codcmp,\r
+
+      \                      a.usu_despro,\r
+
+      \                      d.tippro,\r
+
+      \                      a.usu_codoricmp,\r
+
+      \                      a.usu_unimed,\r
+
+      \                      t.precus\r
+
+      \        ),\r
+
+      \        rotas AS (\r
+
+      \            SELECT x.*,\r
+
+      \                   b.seqrot,\r
+
+      \                   b.codcre,\r
+
+      \                   b.codccu AS codccurot,\r
+
+      \                   b.codetg,\r
+
+      \                   b.sfxetr,\r
+
+      \                   b.sfxseq,\r
+
+      \                   b.movorp,\r
+
+      \                   b.tmpfix,\r
+
+      \                   b.tmpprp,\r
+
+      \                   e.sitrot\r
+
+      \              FROM componentes x\r
+
+      \              LEFT JOIN e710sqr b\r
+
+      \                ON b.codemp = x.usu_codemp\r
+
+      \               AND b.codrot = x.usu_codcmp\r
+
+      \              LEFT JOIN e710rot e\r
+
+      \                ON e.codemp = x.usu_codemp\r
+
+      \               AND e.codrot = x.usu_codcmp\r
+
+      \        ),\r
+
+      \        ccu_inicial AS (\r
+
+      \            SELECT codemp,\r
+
+      \                   codrot,\r
+
+      \                   MAX(codccu) KEEP (\r
+
+      \                       DENSE_RANK FIRST ORDER BY seqrot\r
+
+      \                   ) AS ccuini\r
+
+      \              FROM e710sqr\r
+
+      \             WHERE codccu NOT IN ('022100', '021815', '021826')\r
+
+      \             GROUP BY codemp, codrot\r
+
+      \        )\r
+
+      \        SELECT r.usu_codemp,\r
+
+      \               r.usu_codpro,\r
+
+      \               r.usu_codder,\r
+
+      \               r.usu_tipmer,\r
+
+      \               r.usu_codcmp,\r
+
+      \               r.usu_despro,\r
+
+      \               r.tippro,\r
+
+      \               r.usu_codoricmp,\r
+
+      \               r.usu_unimed,\r
+
+      \               r.usu_qtduti,\r
+
+      \               r.codcre,\r
+
+      \               r.codccurot,\r
+
+      \               c.desnsr,\r
+
+      \               r.movorp,\r
+
+      \               r.sitrot,\r
+
+      \               r.tmpfix,\r
+
+      \               r.tmpprp,\r
+
+      \               r.seqrot,\r
+
+      \               i.ccuini,\r
+
+      \               round(r.precus, 2) AS precus\r
+
+      \          FROM rotas r\r
+
+      \          LEFT JOIN e710nsr c\r
+
+      \            ON c.codemp = r.usu_codemp\r
+
+      \           AND c.codrot = r.usu_codcmp\r
+
+      \           AND c.codetg = r.codetg\r
+
+      \           AND c.sfxetr = r.sfxetr\r
+
+      \           AND c.seqrot = r.seqrot\r
+
+      \           AND c.sfxseq = r.sfxseq\r
+
+      \          LEFT JOIN ccu_inicial i\r
+
+      \            ON i.codemp = r.usu_codemp\r
+
+      \           AND i.codrot = r.usu_codcmp;\r
+
+      \r
+
+      \    FUNCTION csv(p_valor VARCHAR2) RETURN VARCHAR2\r
+
+      \    IS\r
+
+      \    BEGIN\r
+
+      \        RETURN '\"' || REPLACE(NVL(p_valor, ''), '\"', '\"\"') || '\"';\r
+
+      \    END csv;\r
+
+      \r
+
+      BEGIN\r
+
+      \    v_arquivo := UTL_FILE.FOPEN(\r
+
+      \        location     => 'DWINDUSTRIAL',\r
+
+      \        filename     => 'explosao.csv',\r
+
+      \        open_mode    => 'W',\r
+
+      \        max_linesize => 32767\r
+
+      \    );\r
+
+      \r
+
+      \    v_aberto := TRUE;\r
+
+      \r
+
+      \    UTL_FILE.PUT_LINE(\r
+
+      \        v_arquivo,\r
+
+      \        'USU_CODEMP;USU_CODPRO;USU_CODDER;USU_TIPMER;USU_CODCMP;' ||\r
+
+      \        'USU_DESPRO;TIPPRO;USU_CODORICMP;USU_UNIMED;USU_QTDUTI;' ||\r
+
+      \        'CODCRE;CODCCUROT;DESNSR;MOVORP;SITROT;TMPFIX;TMPPRP;' ||\r
+
+      \        'SEQROT;CCUINI;PRECUS'\r
+
+      \    );\r
+
+      \r
+
+      \    FOR r IN c_dados LOOP\r
+
+      \        UTL_FILE.PUT_LINE(\r
+
+      \            v_arquivo,\r
+
+      \            csv(TO_CHAR(r.usu_codemp)) || ';' ||\r
+
+      \            csv(r.usu_codpro) || ';' ||\r
+
+      \            csv(r.usu_codder) || ';' ||\r
+
+      \            csv(r.usu_tipmer) || ';' ||\r
+
+      \            csv(r.usu_codcmp) || ';' ||\r
+
+      \            csv(r.usu_despro) || ';' ||\r
+
+      \            csv(r.tippro) || ';' ||\r
+
+      \            csv(r.usu_codoricmp) || ';' ||\r
+
+      \            csv(r.usu_unimed) || ';' ||\r
+
+      \            csv(TO_CHAR(r.usu_qtduti, 'TM9',\r
+
+      \                'NLS_NUMERIC_CHARACTERS=''.,''')) || ';' ||\r
+
+      \            csv(TO_CHAR(r.codcre)) || ';' ||\r
+
+      \            csv(TO_CHAR(r.codccurot)) || ';' ||\r
+
+      \            csv(REPLACE(REPLACE(r.desnsr, CHR(13), ' '),CHR(10), ' ')) ||
+      ';' ||\r
+
+      \            csv(r.movorp) || ';' ||\r
+
+      \            csv(r.sitrot) || ';' ||\r
+
+      \            csv(TO_CHAR(r.tmpfix)) || ';' ||\r
+
+      \            csv(TO_CHAR(r.tmpprp)) || ';' ||\r
+
+      \            csv(TO_CHAR(r.seqrot)) || ';' ||\r
+
+      \            csv(TO_CHAR(r.ccuini)) || ';' ||\r
+
+      \            csv(TO_CHAR(r.precus, 'TM9',\r
+
+      \                'NLS_NUMERIC_CHARACTERS=''.,'''))\r
+
+      \        );\r
+
+      \    END LOOP;\r
+
+      \r
+
+      \    UTL_FILE.FCLOSE(v_arquivo);\r
+
+      \    v_aberto := FALSE;\r
+
+      \r
+
+      EXCEPTION\r
+
+      \    WHEN OTHERS THEN\r
+
+      \        IF v_aberto THEN\r
+
+      \            UTL_FILE.FCLOSE(v_arquivo);\r
+
+      \        END IF;\r
+
+      \r
+
+      \        RAISE;\r
+
+      END PRC_EXPORTAR_EXPLOSAO_CSV;\r
+
+      /"
+    languageId: oracle-sql
+  - kind: 2
+    value: "BEGIN\r
+
+      \    PRC_EXPORTAR_EXPLOSAO_CSV;\r
+
+      END;"
+    languageId: oracle-sql
