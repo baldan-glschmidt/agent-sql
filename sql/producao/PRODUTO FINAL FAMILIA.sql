@@ -25,17 +25,16 @@ WITH produtos_encontrados AS (
        AND PRIOR a.codemp = a.codemp
 ),
 produtos_com_origem AS (
-    SELECT pe.*
+    SELECT pe.*, p.codfam
     FROM produtos_encontrados pe
     JOIN e075pro p
       ON p.codemp = pe.codemp
      AND p.codpro = pe.codmod
     WHERE p.codori IN ('PLV', 'PPS', 'PLT', 'KAC')
 )
-SELECT pg.*,
-       pe.codemp,
+SELECT distinct pg.PRODUTO,
        pe.codmod,
-       pe.codder,
+       pe.codfam,
        CASE
            WHEN pe.produto_base IS NULL THEN 'N'
            ELSE 'S'
