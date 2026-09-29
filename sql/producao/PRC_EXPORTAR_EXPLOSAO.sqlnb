@@ -26,7 +26,14 @@ cells:
 
       \                   a.usu_despro,\r
 
-      \                   d.tippro,\r
+      \                   CASE WHEN (d.tippro = 'P' AND d.IndMis = 'S' AND
+      d.GerOrp = 'S') then 'C'\r
+
+      \                        WHEN d.tippro = 'C' then 'C'\r
+
+      \                        ELSE 'P'\r
+
+      \                   END AS tippro,\r
 
       \                   a.usu_codoricmp,\r
 
@@ -74,7 +81,11 @@ cells:
 
       \                      a.usu_unimed,\r
 
-      \                      t.precus\r
+      \                      t.precus,\r
+
+      \                      d.IndMis,\r
+
+      \                      d.GerOrp\r
 
       \        ),\r
 
