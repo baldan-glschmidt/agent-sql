@@ -14,7 +14,7 @@ e evitar assumir estruturas de banco que não estejam documentadas.
 
 Os arquivos localizados em:
 
-`docs/Arquivo TBS/`
+`docs/tabelas/`
 
 são a fonte oficial para consultar a estrutura das tabelas do banco.
 
