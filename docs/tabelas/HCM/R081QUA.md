@@ -1,0 +1,86 @@
+# R081QUA
+
+## Descrição
+
+Quadro de Lotação p/ Time
+
+---
+
+## Resumo
+
+- Campos: 19
+- Chave Primária: 5 campo(s)
+- Índices: 0
+- Relacionamentos: 3
+
+---
+
+## Campos
+
+| Campo | Tipo | Nulo | Descrição |
+|--------|------|------|-----------|
+| NumEmp | Number(004,0) | Não | Código da Empresa |
+| TabOrg | Number(004,0) | Não | Código da Tabela de Organograma do Local |
+| NumLoc | Number(009,0) | Não | Local do Organograma |
+| CodTim | String(008) | Não | Código do Time |
+| CmpQua | Date | Não | Data do Quadro |
+| VagGer | Number(004,0) | Sim | Vagas no Turno Geral |
+| VagTu1 | Number(004,0) | Sim | Vagas no Primeiro Turno |
+| VagTu2 | Number(004,0) | Sim | Vagas no Segundo Turno |
+| VagTu3 | Number(004,0) | Sim | Vagas no Terceiro Turno |
+| VagTu4 | Number(004,0) | Sim | Vagas no Quarto Turno |
+| VagMis | Number(004,0) | Sim | Vagas no Turno Misto |
+| VagTer | Number(004,0) | Sim | Vagas de Terceiros |
+| VmuGer | Number(004,0) | Sim | Vagas Multifuncional Turno Geral |
+| VmuTu1 | Number(004,0) | Sim | Vagas Multifuncional Primeiro Turno |
+| VmuTu2 | Number(004,0) | Sim | Vagas Multifuncional Segundo Turno |
+| VmuTu3 | Number(004,0) | Sim | Vagas Multifuncional Terceiro Turno |
+| VmuTu4 | Number(004,0) | Sim | Vagas Multifuncional Quarto Turno |
+| VmuMis | Number(004,0) | Sim | Vagas Multifuncional Turno Misto |
+| ObsQua | String(250) | Sim | Observação Quadro de Lotação |
+
+---
+
+## Chave Primária
+
+- NumEmp
+- TabOrg
+- NumLoc
+- CodTim
+- CmpQua
+
+---
+
+## Índices
+
+Nenhum índice cadastrado.
+
+---
+
+## Relacionamentos
+
+### IR_R081QUA_000
+
+**Tabela:** R030EMP
+
+| Origem | Destino |
+|--------|---------|
+| NumEmp | NumEmp |
+
+### IR_R081QUA_002
+
+**Tabela:** R016ORN
+
+| Origem | Destino |
+|--------|---------|
+| TabOrg | TabOrg |
+| NumLoc | NumLoc |
+
+### IR_R081QUA_003
+
+**Tabela:** R078TIM
+
+| Origem | Destino |
+|--------|---------|
+| CodTim | CodTim |
+

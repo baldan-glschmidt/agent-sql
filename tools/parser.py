@@ -320,7 +320,7 @@ class Parser:
 if __name__ == "__main__":
 
     ARQUIVO = Path(
-        r"C:\Repositorios\agent-sql\docs\Arquivo TBS\Comercial.txt"
+        r"C:\Repositório\agent-sql\docs\Arquivo TBS\HCM.txt"
     )
 
     parser = Parser(ARQUIVO)
@@ -328,7 +328,7 @@ if __name__ == "__main__":
     tabelas = parser.parse()
 
     PASTA_SAIDA = Path(
-    r"C:\Repositorios\agent-sql\docs\tabelas\Comercial"
+    r"C:\Repositório\agent-sql\docs\tabelas\HCM"
     )
 
     gerador = MarkdownGenerator(PASTA_SAIDA)

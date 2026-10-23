@@ -1,0 +1,61 @@
+# R349RED
+
+## Descrição
+
+S-5002 - eSocial - Informação de reembolso do dependente do plano de saúde
+
+---
+
+## Resumo
+
+- Campos: 10
+- Chave Primária: 8 campo(s)
+- Índices: 1
+- Relacionamentos: 0
+
+---
+
+## Campos
+
+| Campo | Tipo | Nulo | Descrição |
+|--------|------|------|-----------|
+| NumEmp | Number(004,0) | Não | Empresa |
+| FilEmp | Number(006,0) | Não | Código da Filial Empregadora |
+| PerApu | Date | Não | Período Apuração |
+| CpfTra | Number(011,0) | Não | CPF do trabalhador |
+| SeqTab | Number(009,0) | Não | Sequência |
+| SeqCpl | Number(009,0) | Não | Sequência |
+| SeqRee | Number(009,0) | Não | Sequência |
+| SeqRed | Number(009,0) | Não | Sequência |
+| NumCpf | Number(011,0) | Sim | Número do CPF do Dependente |
+| PidExc | String(050) | Sim | Identificador da execução da pendência para consultar retorno recibo |
+
+---
+
+## Chave Primária
+
+- NumEmp
+- FilEmp
+- PerApu
+- CpfTra
+- SeqTab
+- SeqCpl
+- SeqRee
+- SeqRed
+
+---
+
+## Índices
+
+### R349REDIndice1
+
+**Tipo:** Não unico
+
+Campos:
+- PidExc
+
+---
+
+## Relacionamentos
+
+Nenhum relacionamento cadastrado.
