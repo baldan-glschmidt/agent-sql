@@ -1,4 +1,4 @@
-# markdown.py
+# markdown_generator.py
 
 from pathlib import Path
 from models import Tabela

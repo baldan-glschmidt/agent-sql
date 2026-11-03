@@ -1,0 +1,285 @@
+-------------------------------------------------------------------------
+Total de tabela(s) processada(s): 2
+-------------------------------------------------------------------------
+
+
+---------------------
+Tabela: USU_Tdesint
+
+Descrição: Controlde de Desenhos - Distribuicao Interna 
+Total de campos: 23 
+Nome do Campo:	 USU_revdes
+Tipo do Campo:	 String(005)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[5]
+Descrição:	 Revisao Desenho
+Título curto:	 Revisao Desenho
+Título longo:	 Revisao Desenho
+
+Nome do Campo:	 USU_datenv
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data Envio
+Título curto:	 Data Envio
+Título longo:	 Data Envio
+
+Nome do Campo:	 USU_datret
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data Retorno
+Título curto:	 Data Retorno 
+Título longo:	 Data Retorno
+
+Nome do Campo:	 USU_seqrev
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZZ
+Descrição:	 Sequencia
+Título curto:	 Sequencia
+Título longo:	 Sequencia
+
+Nome do Campo:	 USU_tipimp
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Tipo
+Título curto:	 Tipo
+Título longo:	 Tipo
+
+Nome do Campo:	 USU_codarm
+Tipo do Campo:	 Number(003,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZ9
+Descrição:	 Codigo Armario
+Título curto:	 Codigo Armario
+Título longo:	 Codigo Armario
+
+Nome do Campo:	 USU_codemp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Empresa
+Título curto:	 Empresa
+Título longo:	 Empresa
+
+Nome do Campo:	 USU_codccu
+Tipo do Campo:	 String(009)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[9]
+Descrição:	 Centro de Custo
+Título curto:	 Centro de Custo
+Título longo:	 Centro de Custo
+
+Nome do Campo:	 USU_coddes
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Cod. Desenho
+Título curto:	 Cod. Desenho
+Título longo:	 Cod. Desenho
+
+Nome do Campo:	 USU_numptc
+Tipo do Campo:	 Number(006,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[6]
+Descrição:	 Num. Protocolo
+Título curto:	 Num. Protocolo
+Título longo:	 Num. Protocolo
+
+Nome do Campo:	 USU_qtdcop
+Tipo do Campo:	 Number(003,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ
+Descrição:	 Qtde Copias
+Título curto:	 Qtde Copias
+Título longo:	 Qtde Copias
+
+Nome do Campo:	 USU_datsub
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data Substituicao
+Título curto:	 Data Substituicao
+Título longo:	 Data Substituicao
+
+Nome do Campo:	 USU_codder
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 A[7]
+Descrição:	 Codigo Derivacao
+Título curto:	 Codigo Derivacao
+Título longo:	 Codigo Derivacao
+
+Nome do Campo:	 USU_UsuGer
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Usuário Geração
+Título curto:	 Usuário Geração
+Título longo:	 Usuário Geração
+
+Nome do Campo:	 USU_DatGer
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data da Geração do Registro
+Título curto:	 Data Geração
+Título longo:	 Data Geração
+
+Nome do Campo:	 USU_UsuApr
+Tipo do Campo:	 Number(010,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[9]9
+Descrição:	 Usuário Aprovação/Aceitação
+Título curto:	 Usuário Aprovação/Aceitação
+Título longo:	 Usuário Aprovação/Aceitação
+
+Nome do Campo:	 USU_DatApr
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data Aprovação/Aceitação
+Título curto:	 Data Aprovação/Aceitação
+Título longo:	 Data Aprovação/Aceitação
+
+Nome do Campo:	 USU_codfor
+Tipo do Campo:	 Number(009,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[8]9
+Descrição:	 Cod. Fornecedor
+Título curto:	 Cod. Fornecedor
+Título longo:	 Cod. Fornecedor
+
+Nome do Campo:	 USU_DevDes
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 A[1]
+Descrição:	 Devolução do desenho (S/N)
+Título curto:	 Devolução
+Título longo:	 Devolução do desenho (S/N)
+
+Nome do Campo:	 USU_EnvSub
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data de envio Substituição
+Título curto:	 Data de envio Substituição
+Título longo:	 Data de envio Substituição
+
+Nome do Campo:	 USU_DevSub
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data de devolução Substituição
+Título curto:	 Data de devolução Substituição
+Título longo:	 Data de devolução Substituição
+
+Nome do Campo:	 USU_nrocon
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 9[4]
+Descrição:	 Numero Controle
+Título curto:	 Numero Controle
+Título longo:	 Numero Controle
+
+Nome do Campo:	 USU_anocon
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 9[4]
+Descrição:	 Ano Controle
+Título curto:	 Ano Controle
+Título longo:	 Ano Controle
+
+Nome da Chave primária:	 CP_USU_Tdesint
+Campos da Chave primária:	 USU_coddes;USU_codccu;USU_revdes;USU_seqrev;USU_codemp;USU_codarm
+
+Total de relacionamentos: 0
+
+---------------------
+Tabela: USU_TDesInt1
+
+Descrição: Controle de desenhos internos 1 
+Total de campos: 6 
+Nome do Campo:	 USU_NAvisoALE
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 A[10]
+Descrição:	 N.Aviso Alt./Liber.
+Título curto:	 N.Aviso Alt./Liber.
+Título longo:	 N.Aviso Alt./Liber.
+
+Nome do Campo:	 USU_Obs
+Tipo do Campo:	 String(050)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[50]
+Descrição:	 Observacao
+Título curto:	 Observacao
+Título longo:	 Observacao
+
+Nome do Campo:	 USU_RevDes
+Tipo do Campo:	 String(005)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[5]
+Descrição:	 Revisao do Desenho
+Título curto:	 Revisao do Desenho
+Título longo:	 Revisao do Desenho
+
+Nome do Campo:	 USU_CodDes
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Cod. do Desenho
+Título curto:	 Cod. do Desenho
+Título longo:	 Cod. do Desenho
+
+Nome do Campo:	 USU_codder
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 A[7]
+Descrição:	 Codigo Derivacao
+Título curto:	 Codigo Derivacao
+Título longo:	 Codigo Derivacao
+
+Nome do Campo:	 USU_LetAlt
+Tipo do Campo:	 String(001)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[1]
+Descrição:	 Controle de Alteracao de Desenhos Internos
+Título curto:	 USU_LetAlt
+Título longo:	 Controle de Alteracao de desenhos internos
+
+Nome da Chave primária:	 CP_USU_TDesInt1
+Campos da Chave primária:	 USU_CodDes;USU_RevDes;USU_NAvisoALE;USU_LetAlt
+
+Total de relacionamentos: 0
