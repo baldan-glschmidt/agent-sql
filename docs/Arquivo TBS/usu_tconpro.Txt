@@ -1,0 +1,302 @@
+-------------------------------------------------------------------------
+Total de tabela(s) processada(s): 1
+-------------------------------------------------------------------------
+
+
+---------------------
+Tabela: USU_Tconpro
+
+Descrição: Tabela de Controle Processos de Fabricacao Chao de Fabrica 
+Total de campos: 32 
+Nome do Campo:	 USU_tamim1
+Tipo do Campo:	 String(012)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[12]
+Descrição:	 Tamanho Implemento
+Título curto:	 Tamanho Implemento
+Título longo:	 Tamanho Implemento
+
+Nome do Campo:	 USU_tamim2
+Tipo do Campo:	 String(012)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[12]
+Descrição:	 Tamanho Implemento
+Título curto:	 Tamanho Implemento
+Título longo:	 Tamanho Implemento
+
+Nome do Campo:	 USU_tamim3
+Tipo do Campo:	 String(012)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[12]
+Descrição:	 Tamanho Implemento
+Título curto:	 Tamanho Implemento
+Título longo:	 Tamanho Implemento
+
+Nome do Campo:	 USU_tamim4
+Tipo do Campo:	 String(012)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[12]
+Descrição:	 Tamanho Implemento
+Título curto:	 Tamanho Implemento
+Título longo:	 Tamanho Implemento
+
+Nome do Campo:	 USU_codacs
+Tipo do Campo:	 String(008)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[8]
+Descrição:	 Codigo Acessorio
+Título curto:	 Codigo Acessorio
+Título longo:	 Codigo Acessorio
+
+Nome do Campo:	 USU_numpas
+Tipo do Campo:	 Number(006,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z[5]9
+Descrição:	 Numero da Pasta
+Título curto:	 Numero da Pasta
+Título longo:	 Numero da Pasta
+
+Nome do Campo:	 USU_numgav
+Tipo do Campo:	 Number(003,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9
+Descrição:	 Numero da Gaveta
+Título curto:	 Numero da Gaveta
+Título longo:	 Numero da Gaveta
+
+Nome do Campo:	 USU_codarm
+Tipo do Campo:	 Number(003,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZ9
+Descrição:	 Codigo Armario
+Título curto:	 Codigo Armario
+Título longo:	 Codigo Armario
+
+Nome do Campo:	 USU_codpec
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Codigo Peca
+Título curto:	 Codigo Peca
+Título longo:	 Codigo Peca
+
+Nome do Campo:	 USU_codemp
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Codigo Empresa
+Título curto:	 Codigo Empresa
+Título longo:	 Codigo Empresa
+
+Nome do Campo:	 USU_codder
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Derivacao Peca
+Título curto:	 Derivacao Peca
+Título longo:	 Derivacao Peca
+
+Nome do Campo:	 USU_famim6
+Tipo do Campo:	 Number(003,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9
+Descrição:	 Familia Implemento
+Título curto:	 Familia Implemento
+Título longo:	 Familia Implemento
+
+Nome do Campo:	 USU_famim7
+Tipo do Campo:	 Number(003,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9
+Descrição:	 Familia Implemento
+Título curto:	 Familia Implemento
+Título longo:	 Familia Implemento
+
+Nome do Campo:	 USU_famim1
+Tipo do Campo:	 Number(003,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9
+Descrição:	 Familia Implemento
+Título curto:	 Familia Implemento
+Título longo:	 Familia Implemento
+
+Nome do Campo:	 USU_famim2
+Tipo do Campo:	 Number(003,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9
+Descrição:	 Familia Implemento
+Título curto:	 Familia Implemento
+Título longo:	 Familia Implemento
+
+Nome do Campo:	 USU_famim3
+Tipo do Campo:	 Number(003,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9
+Descrição:	 Familia Implemento
+Título curto:	 Familia Implemento
+Título longo:	 Familia Implemento
+
+Nome do Campo:	 USU_famim4
+Tipo do Campo:	 Number(003,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9
+Descrição:	 Familia Implemento
+Título curto:	 Familia Implemento
+Título longo:	 Familia Implemento
+
+Nome do Campo:	 USU_famim5
+Tipo do Campo:	 Number(003,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZ9
+Descrição:	 Familia Implemento
+Título curto:	 Familia Implemento
+Título longo:	 Familia Implemento
+
+Nome do Campo:	 USU_tamim5
+Tipo do Campo:	 String(012)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[12]
+Descrição:	 Tamanho Implemento
+Título curto:	 Tamanho Implemento
+Título longo:	 Tamanho Implemento
+
+Nome do Campo:	 USU_tamim6
+Tipo do Campo:	 String(012)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[12]
+Descrição:	 Tamanho Implemento
+Título curto:	 Tamanho Implemento
+Título longo:	 Tamanho Implemento
+
+Nome do Campo:	 USU_tamim7
+Tipo do Campo:	 String(012)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[12]
+Descrição:	 Tamanho Implemento
+Título curto:	 Tamanho Implemento
+Título longo:	 Tamanho Implemento
+
+Nome do Campo:	 USU_dercjs
+Tipo do Campo:	 String(007)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[7]
+Descrição:	 Derivacao conjunto
+Título curto:	 Derivacao conjunto
+Título longo:	 Derivacao conjunto
+
+Nome do Campo:	 USU_codcjs
+Tipo do Campo:	 String(014)
+Permite Nulo:	 Não
+Valor de Inicialização:	 
+Máscara:	 U[14]
+Descrição:	 Codigo Conjunto
+Título curto:	 Codigo Conjunto
+Título longo:	 Codigo Conjunto
+
+Nome do Campo:	 USU_codacs3
+Tipo do Campo:	 String(008)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[8]
+Descrição:	 Codigo Acessorio
+Título curto:	 Codigo Acessorio
+Título longo:	 Codigo Acessorio
+
+Nome do Campo:	 USU_codacs2
+Tipo do Campo:	 String(008)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[8]
+Descrição:	 Codigo Acessorio
+Título curto:	 Codigo Acessorio
+Título longo:	 Codigo Acessorio
+
+Nome do Campo:	 USU_letra
+Tipo do Campo:	 String(006)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 U[6]
+Descrição:	 Letra
+Título curto:	 Letra
+Título longo:	 Letra
+
+Nome do Campo:	 USU_codcel
+Tipo do Campo:	 Number(004,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ9
+Descrição:	 Codigo da Celula
+Título curto:	 Codigo da Celula
+Título longo:	 Codigo da Celula
+
+Nome do Campo:	 USU_CodPag
+Tipo do Campo:	 String(005)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 A[5]
+Descrição:	 Código da Página
+Título curto:	 Código da Página
+Título longo:	 Código da Página
+
+Nome do Campo:	 USU_NivDur
+Tipo do Campo:	 String(010)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 A[10]
+Descrição:	 Nível de Dureza
+Título curto:	 Nível de Dureza
+Título longo:	 Nível de Dureza
+
+Nome do Campo:	 USU_NumCop
+Tipo do Campo:	 Number(002,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 Z9
+Descrição:	 Número de Cópias
+Título curto:	 Número de Cópias
+Título longo:	 Número de Cópias
+
+Nome do Campo:	 USU_DatAlt
+Tipo do Campo:	 Date
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 DD/MM/YYYY
+Descrição:	 Data de Alteração
+Título curto:	 Data de Alteração
+Título longo:	 Data de Alteração
+
+Nome do Campo:	 USU_UsuAlt
+Tipo do Campo:	 Number(006,0)
+Permite Nulo:	 Sim
+Valor de Inicialização:	 
+Máscara:	 ZZZ.ZZ9
+Descrição:	 Usuário Gerador/Manutenção do Registro
+Título curto:	 Usuário Gerador/Manutenção do Registro
+Título longo:	 Usuário Gerador/Manutenção do Registro
+
+Nome da Chave primária:	 CP_USU_Tconpro
+Campos da Chave primária:	 USU_codemp;USU_codpec;USU_codder;USU_codarm;USU_codcjs;USU_dercjs
+
+Total de relacionamentos: 0

@@ -320,7 +320,7 @@ class Parser:
 if __name__ == "__main__":
 
     ARQUIVO = Path(
-        r"C:\Repositorios\agent-sql\docs\Arquivo TBS\USU_TDesInt.txt"
+        r"C:\GitHub\agent-sql\docs\Arquivo TBS\usu_tconpro.txt"
     )
 
     parser = Parser(ARQUIVO)
@@ -328,7 +328,7 @@ if __name__ == "__main__":
     tabelas = parser.parse()
 
     PASTA_SAIDA = Path(
-        r"C:\Repositorios\agent-sql\docs\tabelas"
+        r"C:\GitHub\agent-sql\docs\tabelas"
     )
 
     gerador = MarkdownGenerator(PASTA_SAIDA)
